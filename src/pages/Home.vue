@@ -1,14 +1,15 @@
 <template>
   <div>
-<!--     <img src="./assets/logo.png"> -->
     <hero></hero>
+    <department></department>
     <sponser></sponser>
   </div>
 </template>
 
 <script>
-import Sponser from '@/components/sponser';
-import Hero from '@/components/hero';
+import Sponser from '@/components/Sponser';
+import Hero from '@/components/Hero';
+import Department from '@/components/Department';
 // import introduce from './components/introduce';
 
 export default {
@@ -16,11 +17,12 @@ export default {
   components: {
     Sponser,
     Hero,
+    Department,
     // introduce,
   },
 };
 </script>
 
-<style>
+<style lang="css" scoped>
 
 </style>

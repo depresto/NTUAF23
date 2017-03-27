@@ -26,7 +26,7 @@ img {
 }
 
 .hero_head {
-  height: 360px;
+  height: 30em;
   position: absolute;
   bottom: 0;
   left: 30%;
