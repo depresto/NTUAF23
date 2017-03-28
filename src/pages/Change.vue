@@ -1,10 +1,6 @@
 <template>
   <div>
-    <hero></hero>
-    <department></department>
-    <introduce></introduce>
-    <event></event>
-    <sponser></sponser>
+    行策展
     <foot></foot>
   </div>
 </template>
@@ -14,8 +10,8 @@ import Sponser from '@/components/Sponser';
 import Hero from '@/components/Hero';
 import Department from '@/components/Department';
 import Event from '@/components/Event';
-import Introduce from '@/components/Introduce';
 import Foot from '@/components/Footer';
+// import introduce from './components/introduce';
 
 export default {
   name: 'home-page',
@@ -25,7 +21,7 @@ export default {
     Department,
     Event,
     Foot,
-    Introduce,
+    // introduce,
   },
 };
 </script>
