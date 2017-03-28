@@ -1,6 +1,6 @@
 <template>
   <section class="section">
-    <mu-row gutter>
+    <mu-row gutter class="row">
       <mu-col width="100" tablet="33" desktop="33">
         <div class="department">
           <div class="name">
@@ -49,11 +49,16 @@
   </section>
 </template>
 
+<style lang="sass" scoped>
+  @import '../sass/settings'
+  .row
+    margin: 0 2rem
+</style>
 
 <style lang="css" scoped>
 .section {
-  max-width: 1080px;
-  margin:  80px 2rem;
+  max-width: 1280px;
+  margin:  80px auto;
 }
 
  .department {

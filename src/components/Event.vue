@@ -2,9 +2,9 @@
   <section>
 
     <div> 活動售票 </div>
-    <mu-row gutter class="card-row">
+    <mu-row gutter class="card-row row">
       <mu-col width="100" tablet="50" desktop="50" class="card class-a" v-for="s in sponsors">
-        <div class="card">
+        <a class="card" href="https://ntuaf23.backme.tw/shops/515">
           <div class="time">
             <div class="time_date">{{ s.Date }}</div>
             <div class="time_time">{{ s.Time }}</div>
@@ -14,15 +14,15 @@
           </div>
           <div class="name">{{ s.Name }}</div>
           <a href="https://ntuaf23.backme.tw/shops/515" class="btn">前往報名</a>
-        </div>
+        </a>
       </mu-col>
-    </mu-row>
     <div
       class="more"
       :style="{ 'background-image': 'url(' + backgroundImage + ')' }"
     >
       <a class="more_btn" href="https://ntuaf23.backme.tw/shops/515">查看所有活動</a>
     </div>
+    </mu-row>
   </section>
 </template>
 
@@ -83,10 +83,16 @@ export default {
 };
 </script>
 
+<style lang="sass" scoped>
+  @import '../sass/settings'
+  .row
+    margin: 0 2rem
+</style>
+
 <style lang="css" scoped>
 section{
-  max-width: 1080px;
-  margin: 0 2rem;
+  max-width: 1280px;
+  margin:  80px auto;
   margin-top: 20px;
 }
 
@@ -94,6 +100,7 @@ section{
   text-align: left;
   position: relative;
   margin: 1em 0;
+  display: block;
 }
 
 .time {

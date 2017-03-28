@@ -95,10 +95,17 @@ export default {
 };
 </script>
 
+<style lang="sass" scoped>
+  @import '../sass/settings'
+  .row
+    margin: 0 2rem
+</style>
+
+
 <style lang="css" scoped>
 section{
-  max-width: 1080px;
-  margin: 120px 2rem;
+  max-width: 1280px;
+  margin:  100px auto;
 }
 
 .card{
