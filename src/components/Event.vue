@@ -3,7 +3,7 @@
 
     <div> 活動售票 </div>
     <mu-row gutter class="card-row row">
-      <mu-col width="100" tablet="50" desktop="50" class="card class-a" v-for="s in sponsors" :key="item.id">
+      <mu-col width="100" tablet="50" desktop="50" class="card class-a" v-for="s in sponsors">
         <a class="card" href="https://ntuaf23.backme.tw/shops/515">
           <div class="time">
             <div class="time_date">{{ s.Date }}</div>
