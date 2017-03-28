@@ -1,12 +1,10 @@
 <template>
   <section class="footer">
-    <icon name="beer"></icon>
     <span>第二十三屆台大藝術季</span>
   </section>
 </template>
 
 <script>
-
 </script>
 
 <style scoped lang="sass">

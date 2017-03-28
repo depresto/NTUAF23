@@ -16,6 +16,7 @@
     "node-sass": "^4.5.1",
     "sanitize.css": "^5.0.0",
     "sass-loader": "^6.0.3",
+    "scrollreveal": "^3.3.4",
     "vue": "^2.2.2",
     "vue-awesome": "^2.2.1",
     "vue-router": "^2.2.0"

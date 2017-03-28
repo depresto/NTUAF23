@@ -53,7 +53,7 @@
 <style lang="css" scoped>
 .section {
   max-width: 1080px;
-  margin:  80px auto;
+  margin:  80px 2rem;
 }
 
  .department {

@@ -70,7 +70,7 @@ export default {
       } else {
         this.active[Name] = !this.active[Name];
       }
-      console.log(this.active);
+      // console.log(this.active);
     },
     syncAirtable() {
       // console.log('||||| syncAirtable()...');
@@ -84,7 +84,7 @@ export default {
         fetchNextPage();
       }, (err) => {
         if (err) {
-          console.error(err);
+          // console.error(err);
           return;
         }
         this.sponsors = item;
@@ -98,7 +98,7 @@ export default {
 <style lang="css" scoped>
 section{
   max-width: 1080px;
-  margin: 120px auto;
+  margin: 120px 2rem;
 }
 
 .card{
