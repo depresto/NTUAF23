@@ -12,7 +12,7 @@
           <div class="btn">
             前往專頁
           </div>
-          <img class="department1_img" src="../assets/images/hero/hero_head.png">
+          <img class="department1_img" src="static/images/hero/hero_head.png">
         </div>
       </mu-col>
 
@@ -27,7 +27,7 @@
           <div class="btn">
             前往專頁
           </div>
-          <img class="department1_img" src="../assets/images/hero/hero_hand.png">
+          <img class="department1_img" src="static/images/hero/hero_hand.png">
         </div>
       </mu-col>
 
@@ -42,7 +42,7 @@
           <div class="btn">
             前往專頁
           </div>
-          <img class="department1_img" src="../assets/images/hero/hero_foot.png">
+          <img class="department1_img" src="static/images/hero/hero_foot.png">
         </div>
       </mu-col>
     </mu-row>
