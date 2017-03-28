@@ -3,7 +3,7 @@
 
     <div> 贊助夥伴 </div>
     <mu-row gutter class="card-row">
-      <mu-col width="100" tablet="50" desktop="25" class="card class-a" v-for="s in classA" :key="item.id">
+      <mu-col width="100" tablet="50" desktop="25" class="card class-a" v-for="s in classA">
         <mu-paper class="paperA" :zDepth="1" >
         <div>{{ s.Detail }}</div>
         <img class="img" @click="handleOnClick(s)" :src="s.Logo[0].thumbnails.large.url" :alt="s.Logo[0].filename">
@@ -14,7 +14,7 @@
 
     <div> 感謝贊助 </div>
     <mu-row gutter class="card-row">
-      <mu-col width="100" tablet="50" desktop="20" class="card class-a" v-for="s in classB" :key="item.id">
+      <mu-col width="100" tablet="50" desktop="20" class="card class-a" v-for="s in classB">
         <mu-paper class="demo-paper" :zDepth="1" >
         <img class="img" @click="handleOnClick(s)" :src="s.Logo[0].thumbnails.large.url" :alt="s.Logo[0].filename">
 <!--         <h1><b>{{ s.Name }}</b></h1>
