@@ -1,9 +1,9 @@
 <template>
   <section class="hero">
-    <img class="hero_head" src="../assets/images/hero/hero_head.png">
-    <img class="hero_hand" src="../assets/images/hero/hero_hand.png">
-    <img class="hero_hand2" src="../assets/images/hero/hero_hand2.png">
-    <img class="hero_foot" src="../assets/images/hero/hero_foot.png">
+    <img class="hero_head" src="static/images/hero/hero_head.png">
+    <img class="hero_hand" src="static/images/hero/hero_hand.png">
+    <img class="hero_hand2" src="static/images/hero/hero_hand2.png">
+    <img class="hero_foot" src="static/images/hero/hero_foot.png">
     <div class="h1">NTU<br/>ART<br/>FESTIVAL </div>
   </section>
 </template>
