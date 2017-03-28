@@ -12,10 +12,11 @@
       </mu-col width="100" tablet="50" desktop="33">
     </mu-row>
 
-    <div> 感謝贊助 </div>
+    <div class="mt40"> 感謝贊助 </div>
+
     <mu-row gutter class="card-row">
       <mu-col width="100" tablet="50" desktop="20" class="card class-a" v-for="s in classB">
-        <mu-paper class="demo-paper" :zDepth="1" >
+        <mu-paper class="paperB" :zDepth="1" >
         <img class="img" @click="handleOnClick(s)" :src="s.Logo[0].thumbnails.large.url" :alt="s.Logo[0].filename">
 <!--         <h1><b>{{ s.Name }}</b></h1>
         <i>{{ s.Detail }}</i> -->
@@ -117,8 +118,20 @@ section{
   height: 240px;
   cursor: pointer;
 }
+
+.paperB {
+  padding: 20px 0;
+  margin: 10px 0;
+  height: 180px;
+  cursor: pointer;
+}
+
 .img {
   width: auto;
   max-height: 120px;
+}
+
+.mt40{
+  margin-top: 40px;
 }
 </style>
