@@ -97,15 +97,10 @@ export default {
 
 <style lang="css" scoped>
 section{
-  border: 1px pink dashed;
   max-width: 1080px;
-  margin: 0 auto;
-  margin-top: 20px;
+  margin: 120px auto;
 }
 
-.active {
-  border: red 1px solid;
-}
 .card{
   text-align: center;
 }

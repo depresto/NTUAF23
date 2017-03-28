@@ -12,7 +12,7 @@
           <div class="btn">
             前往專頁
           </div>
-          <img class="department1_img" src="../assets/hero/hero_head.png">
+          <img class="department1_img" src="../assets/images/hero/hero_head.png">
         </div>
       </mu-col>
 
@@ -27,7 +27,7 @@
           <div class="btn">
             前往專頁
           </div>
-          <img class="department1_img" src="../assets/hero/hero_hand.png">
+          <img class="department1_img" src="../assets/images/hero/hero_hand.png">
         </div>
       </mu-col>
 
@@ -42,7 +42,7 @@
           <div class="btn">
             前往專頁
           </div>
-          <img class="department1_img" src="../assets/hero/hero_foot.png">
+          <img class="department1_img" src="../assets/images/hero/hero_foot.png">
         </div>
       </mu-col>
     </mu-row>
@@ -53,7 +53,7 @@
 <style lang="css" scoped>
 .section {
   max-width: 1080px;
-  margin:  120px auto;
+  margin:  80px auto;
 }
 
  .department {
@@ -62,14 +62,18 @@
   position: relative;
   padding: 1.5em;
   text-align: left;
+  margin: 1em 0;
  }
+
  .name {
   font-size: 2em;
   color: #fff;
  }
+
  .discription {
   color: #fff;
  }
+
  .btn {
   background: #fff;
   color: #4A7583;
@@ -80,6 +84,7 @@
   bottom: 2em;
   right: 2em;
  }
+
  .department1_img {
   position: absolute;
   width: auto;

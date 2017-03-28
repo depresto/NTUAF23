@@ -2,7 +2,9 @@
   <div>
     <hero></hero>
     <department></department>
+    <event></event>
     <sponser></sponser>
+    <foot></foot>
   </div>
 </template>
 
@@ -10,6 +12,8 @@
 import Sponser from '@/components/Sponser';
 import Hero from '@/components/Hero';
 import Department from '@/components/Department';
+import Event from '@/components/Event';
+import Foot from '@/components/Footer';
 // import introduce from './components/introduce';
 
 export default {
@@ -18,6 +22,8 @@ export default {
     Sponser,
     Hero,
     Department,
+    Event,
+    Foot,
     // introduce,
   },
 };
