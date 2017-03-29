@@ -17,7 +17,7 @@
             </p>
             <div class="time">
               <li>15:00 - 18:00 彩繪椰林大道</li>
-              <li>18:00 - 18:30 怡仁堂開幕:背景音樂與形象片播放</li>
+              <li>18:00 - 18:30 怡仁堂開幕</li>
               <li>18:30 - 19:00 校長與總召致詞</li>
               <li>19:00 - 21:00 正式節目</li>
               <li> 21:00 - 22:00 After Party</li>
@@ -60,12 +60,12 @@ export default {
     margin-top: 20px
 
   .intro
-    width: 640px
+    max-width: 640px
     text-align: center
     margin: 0 auto
 
   .time
-    width: 400px
+    max-width: 400px
     margin: 0 auto
     text-align: justify
     li
