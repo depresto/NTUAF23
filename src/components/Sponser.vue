@@ -1,40 +1,30 @@
 <template>
-  <section>
+  <div class="wrapper">
+    <section>
+      <h2>贊助夥伴</h2>
+      <mu-row gutter class="card-row">
+        <mu-col width="100" tablet="50" desktop="25" class="card class-a" v-for="s in classA">
+          <a :href="s.Link" target="blank">
+            <mu-paper class="paperA" :zDepth="1" >
+              <div>{{ s.Detail }}</div>
+              <img class="img" @click="handleOnClick(s)" :src="s.Logo[0].thumbnails.large.url" :alt="s.Logo[0].filename">
+              <h1><b>{{ s.Name }}</b></h1>
+            </mu-paper>
+          </a>
+        </mu-col width="100" tablet="50" desktop="33">
+      </mu-row>
 
-    <div> 贊助夥伴 </div>
-    <mu-row gutter class="card-row">
-      <mu-col width="100" tablet="50" desktop="25" class="card class-a" v-for="s in classA">
-        <mu-paper class="paperA" :zDepth="1" >
-        <div>{{ s.Detail }}</div>
-        <img class="img" @click="handleOnClick(s)" :src="s.Logo[0].thumbnails.large.url" :alt="s.Logo[0].filename">
-        <h1><b>{{ s.Name }}</b></h1>
-        </mu-paper>
-      </mu-col width="100" tablet="50" desktop="33">
-    </mu-row>
+      <div class="mt40"> 感謝贊助 </div>
 
-    <div class="mt40"> 感謝贊助 </div>
-
-    <mu-row gutter class="card-row">
-      <mu-col width="100" tablet="50" desktop="20" class="card class-a" v-for="s in classB">
-        <mu-paper class="paperB" :zDepth="1" >
-        <img class="img" @click="handleOnClick(s)" :src="s.Logo[0].thumbnails.large.url" :alt="s.Logo[0].filename">
-<!--         <h1><b>{{ s.Name }}</b></h1>
-        <i>{{ s.Detail }}</i> -->
-        </mu-paper>
-      </mu-col width="100" tablet="50" desktop="33">
-    </mu-row>
-<!--     <span class="card-row">
-      <div v-for="s in classB">
-        <div class="card class-b">
-          <img @click="handleOnClick(s)" :src="s.Logo[0].thumbnails.large.url" :alt="s.Logo[0].filename">
-          <div class="container">
-            <h5>{{ s.Name }}</h5>
-            <i>{{ s.Detail }}</i>
-          </div>
-        </div>
-      </div>
-    </span> -->
-  </section>
+      <mu-row gutter class="card-row">
+        <mu-col width="100" tablet="50" desktop="20" class="card class-a" v-for="s in classB">
+          <a :href="s.Link" target="blank" class="paperB" :zDepth="1" >
+          <img class="img" @click="handleOnClick(s)" :src="s.Logo[0].thumbnails.large.url" :alt="s.Logo[0].filename">
+          </a>
+        </mu-col width="100" tablet="50" desktop="33">
+      </mu-row>
+    </section>
+  </div>
 </template>
 
 <script>
@@ -98,6 +88,10 @@ export default {
 
 <style lang="sass" scoped>
   @import '../sass/settings'
+  .wrapper
+    // background: #E4EDEE
+    padding: 40px 0
+    margin: 40px 0
   .row
     margin: 0 2rem
 </style>

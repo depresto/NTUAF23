@@ -1,7 +1,7 @@
 <template>
+  <div class="wrapper">
   <section>
-
-    <div> 活動售票 </div>
+    <h2> 活動售票 </h2>
     <mu-row gutter class="card-row row">
       <mu-col width="100" tablet="50" desktop="50" class="card class-a" v-for="s in sponsors">
         <a class="card" href="https://ntuaf23.backme.tw/shops/515">
@@ -24,6 +24,7 @@
     </div>
     </mu-row>
   </section>
+  </div>
 </template>
 
 <script>
@@ -85,6 +86,10 @@ export default {
 
 <style lang="sass" scoped>
   @import '../sass/settings'
+  .wrapper
+    background: #E4EDEE
+    padding: 40px 0
+    margin: 40px 0
   .row
     margin: 0 2rem
 </style>
@@ -92,14 +97,13 @@ export default {
 <style lang="css" scoped>
 section{
   max-width: 1280px;
-  margin:  80px auto;
-  margin-top: 20px;
+  margin:  100px auto;
 }
 
 .card {
   text-align: left;
   position: relative;
-  margin: 1em 0;
+  margin-bottom: 1em;
   display: block;
 }
 
@@ -133,7 +137,6 @@ section{
   background-position: center bottom;
   position: relative;
   overflow: hidden;
-  z-index: -1;
 }
 
 .detail {

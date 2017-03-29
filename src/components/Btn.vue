@@ -65,7 +65,7 @@ export default {
 }
 
 .btn:hover {
-  transform: scale(1);
+  // transform: scale(1);
   transition: border 0.35s ease,
     background-color 0.35s ease,
     color 0.35s ease,
@@ -80,7 +80,7 @@ export default {
 
 .btn-default:hover {
   background: $button-hover-background-color;
-  color: $button-hover-color;
+  color: #fff;
   border-color: $button-hover-border-color;
 }
 
