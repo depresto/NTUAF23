@@ -3,6 +3,7 @@
     <navBar></navBar>
     <hero></hero>
     <department></department>
+    <opening></opening>
     <introduce></introduce>
     <event></event>
     <sponser></sponser>
@@ -14,6 +15,7 @@
 import Sponser from '@/components/Sponser';
 import Hero from '@/components/Hero';
 import Department from '@/components/Department';
+import Opening from '@/components/Opening';
 import Event from '@/components/Event';
 import Introduce from '@/components/Introduce';
 import Foot from '@/components/Footer';
@@ -25,6 +27,7 @@ export default {
     Sponser,
     Hero,
     Department,
+    Opening,
     Event,
     Foot,
     Introduce,
