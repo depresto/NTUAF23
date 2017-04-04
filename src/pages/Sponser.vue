@@ -1,6 +1,6 @@
 <template>
   <div>
-    行不
+    合作夥伴
     <foot></foot>
   </div>
 </template>

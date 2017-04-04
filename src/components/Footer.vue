@@ -5,6 +5,7 @@
 </template>
 
 <script>
+ console.log('歡迎加入下一屆台大藝術季工程師得行列喔');
 </script>
 
 <style scoped lang="sass">
