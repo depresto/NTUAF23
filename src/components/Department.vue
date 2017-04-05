@@ -20,7 +20,7 @@
         >
 
           <div class="name">
-            變策展部
+            變策展｜身份變形
           </div>
           <div class="discription">
             帶領大家理解藝術治療內涵當中非常重視的結構與解構。讓參與者跟著講師的腳步
@@ -36,7 +36,7 @@
           :style="{ 'background-image': 'url(' + backgroundImage2 + ')' }"
         >
           <div class="name">
-            形策展部
+            形策展｜科技變形
           </div>
           <div class="discription">
             帶領大家理解藝術治療內涵當中非常重視的結構與解構。讓參與者跟著講師的腳步
@@ -52,7 +52,7 @@
           :style="{ 'background-image': 'url(' + backgroundImage3 + ')' }"
         >
           <div class="name">
-            學策展部
+            學術策展｜世代變形
           </div>
           <div class="discription">
             帶領大家理解藝術治療內涵當中非常重視的結構與解構。讓參與者跟著講師的腳步
