@@ -3,7 +3,7 @@
     <section>
       <h2>贊助夥伴</h2>
       <mu-row gutter class="card-row">
-        <mu-col width="100" tablet="50" desktop="25" class="card class-a" v-for="s in classA">
+        <mu-col width="100" tablet="50" desktop="25" class="card class-a" v-for="s in classA" :key="s.id">
           <a :href="s.Link" target="blank">
             <mu-paper class="paperA" :zDepth="1" >
               <div>{{ s.Detail }}</div>
@@ -17,7 +17,7 @@
       <div class="mt40"> 感謝贊助 </div>
 
       <mu-row gutter class="card-row">
-        <mu-col width="100" tablet="50" desktop="20" class="card class-a" v-for="s in classB">
+        <mu-col width="100" tablet="50" desktop="20" class="card class-a" v-for="s in classB" :key="s.id">
           <a :href="s.Link" target="blank" class="paperB" :zDepth="1" >
           <img class="img" @click="handleOnClick(s)" :src="s.Logo[0].thumbnails.large.url" :alt="s.Logo[0].filename">
           </a>
