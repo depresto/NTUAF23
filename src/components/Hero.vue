@@ -1,14 +1,16 @@
 <template>
   <section class="hero">
-    <img class="hero_hand float" src="static/images/hero/hero_hand1S.png">
-    <img class="hero_hand2 float" src="static/images/hero/hero_hand2S.png">
     <img class="hero_foot float" src="static/images/hero/hero_foot1S.png">
     <img class="hero_foot2 float" src="static/images/hero/hero_foot2S.png">
+    <img class="hero_hand float" src="static/images/hero/hero_hand1S.png">
     <img class="hero_body" src="static/images/hero/hero_bodyS.png">
     <img class="hero_head" src="static/images/hero/hero_headgif.gif">
+    <img class="hero_hand2 float" src="static/images/hero/hero_hand2S.png">
     <div class="title">
     	<img class="bian1" src="static/images/hero/Title_01.png">
-    	<img class="bian2" src="static/images/hero/Title_02.png">
+    	<div class="bian2Wrap">
+    		<img class="bian2" src="static/images/hero/Title_02.png">
+    	</div>
     	<img class="xing1" src="static/images/hero/Title_03.png">
     	<img class="xing2" src="static/images/hero/Title_04.png">
     </div>
@@ -106,7 +108,7 @@ img {
 }
 .title {
 	position: absolute;
-	right: 38%;
+	right: 42%;
 	top: calc(12% + 300px * 0.6);
 	width: 568px;
 	height: 600px;
@@ -127,6 +129,15 @@ img {
   position: absolute;
   top: 0;
   left: 0;
+}
+.bian2Wrap{
+	right:0;
+	position: absolute;
+	top: 0;
+	width: 85%;
+	height: 50%;
+	overflow-x: hidden;
+	border: #000 2px;
 }
 .bian2 {
   height: 252px;
