@@ -51,7 +51,7 @@ export default {
 }
 
 .btn {
-  padding: 0.5em 1.5em;
+  padding: 0.2em 1.3em;
   cursor: pointer;
   font-size: $button-size;
   font-weight: 800;

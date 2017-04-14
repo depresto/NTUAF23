@@ -1,23 +1,30 @@
 <template>
   <div class="wrapper">
     <section>
-      <h2>贊助夥伴</h2>
+      <div class="h2">贊助夥伴</div>
       <mu-row gutter class="card-row">
         <mu-col width="100" tablet="50" desktop="25" class="card class-a" v-for="s in classA" :key="s.id">
           <a :href="s.Link" target="blank">
             <mu-paper class="paperA" :zDepth="1" >
-              <div>{{ s.Detail }}</div>
+              <div class="h3">{{ s.Detail }}</div>
               <img class="img" @click="handleOnClick(s)" :src="s.Logo[0].thumbnails.large.url" :alt="s.Logo[0].filename">
-              <h1><b>{{ s.Name }}</b></h1>
             </mu-paper>
           </a>
         </mu-col width="100" tablet="50" desktop="33">
       </mu-row>
 
-      <div class="mt40"> 感謝贊助 </div>
+      <div class="mt40 h3"> 感謝贊助 </div>
 
       <mu-row gutter class="card-row">
         <mu-col width="100" tablet="50" desktop="20" class="card class-a" v-for="s in classB" :key="s.id">
+          <a :href="s.Link" target="blank" class="paperB" :zDepth="1" >
+          <img class="img" @click="handleOnClick(s)" :src="s.Logo[0].thumbnails.large.url" :alt="s.Logo[0].filename">
+          </a>
+        </mu-col width="100" tablet="50" desktop="33">
+      </mu-row>
+      <div class="mt40 h3"> 媒體協力 </div>
+      <mu-row gutter class="card-row">
+        <mu-col width="100" tablet="50" desktop="20" class="card class-a" v-for="s in classC" :key="s.id">
           <a :href="s.Link" target="blank" class="paperB" :zDepth="1" >
           <img class="img" @click="handleOnClick(s)" :src="s.Logo[0].thumbnails.large.url" :alt="s.Logo[0].filename">
           </a>
@@ -51,6 +58,9 @@ export default {
     },
     classB() {
       return this.sponsors.filter(spnsor => spnsor.Class[0] === 'class_B');
+    },
+    classC() {
+      return this.sponsors.filter(spnsor => spnsor.Class[0] === 'class_C');
     },
   },
 
@@ -92,8 +102,18 @@ export default {
     // background: #E4EDEE
     padding: 40px 0
     margin: 40px 0
+
   .row
     margin: 0 2rem
+
+  .h2
+    line-height: 2.4em
+
+  .paperA
+    padding: 20px 0
+    margin: 10px 0
+    cursor: pointer
+
 </style>
 
 
@@ -106,12 +126,12 @@ section{
 .card{
   text-align: center;
 }
-.paperA {
+/* .paperA {
   padding: 20px 0;
   margin: 10px 0;
   height: 240px;
   cursor: pointer;
-}
+} */
 
 .paperB {
   padding: 20px 0;
@@ -127,5 +147,6 @@ section{
 
 .mt40{
   margin-top: 40px;
+  margin-bottom: 20px;
 }
 </style>

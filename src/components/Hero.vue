@@ -1,5 +1,7 @@
 <template>
-  <section class="hero">
+  <section class="hero"
+   :style="{ 'background-image': 'url(' + backgroundImage + ')' }"
+  >
     <img class="hero_hand float" src="static/images/hero/hero_hand1S.png">
     <img class="hero_hand2 float" src="static/images/hero/hero_hand2S.png">
     <img class="hero_foot float" src="static/images/hero/hero_foot1S.png">
@@ -17,9 +19,16 @@
 </template>
 
 <script>
-
+export default {
+  extends: {
+    data() {
+      return {
+        backgroundImage: 'static/images/hero/background.jpg',
+      };
+    },
+  },
+};
 </script>
-
 <style scoped>
 img {
   width: auto;
@@ -34,7 +43,7 @@ img {
 }
 .hero {
   height: 100vh;
-  background: #6c899a url(/static/images/hero/background.jpg);
+/*   background: #6c899a url(/static/images/hero/background.jpg); */
   background-size: cover;
   background-attachment: fixed;
   overflow: hidden;
@@ -55,7 +64,7 @@ img {
 .hero_head {
   height: 315px;
   position: absolute;
-  
+
   left: calc(36% - 172px);
   bottom: 130px;
 }

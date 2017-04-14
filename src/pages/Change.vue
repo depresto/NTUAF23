@@ -1,6 +1,6 @@
 <template>
   <div>
-    行不
+    施工中
     <foot></foot>
   </div>
 </template>
