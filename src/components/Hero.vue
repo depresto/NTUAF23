@@ -43,7 +43,7 @@ img {
 }
 .hero {
   height: 100vh;
-/*   background: #6c899a url(/static/images/hero/background.jpg); */
+  background: #6c899a url(/static/images/hero/background.jpg);
   background-size: cover;
   background-attachment: fixed;
   overflow: hidden;
