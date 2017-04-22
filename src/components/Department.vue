@@ -57,9 +57,7 @@
           <div class="discription">
             帶領大家理解藝術治療內涵當中非常重視的結構與解構。讓參與者跟著講師的腳步
           </div>
-          <div class="btn_wrapper">
-            <a href="https://medium.com/ntuartfest" class=" btn_b">現在就出發</a>
-          </div>
+          <btn class="btn" route="/academic">學術策展部</btn>
 <!--           <img class="department1_img" src="static/images/hero/hero_foot.png"> -->
         </div>
       </mu-col>

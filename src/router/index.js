@@ -3,6 +3,7 @@ import Router from 'vue-router';
 import Home from '@/pages/Home';
 import Change from '@/pages/Change';
 import Sponser from '@/pages/Sponser';
+import Academic from '@/pages/Academic';
 
 Vue.use(Router);
 
@@ -22,6 +23,11 @@ export default new Router({
       path: '/sponser',
       name: 'Sponser',
       component: Sponser,
+    },
+    {
+      path: '/academic',
+      name: 'Academic',
+      component: Academic,
     },
   ],
 });

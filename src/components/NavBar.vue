@@ -14,8 +14,9 @@
       >
         <router-link to="sponser">合作夥伴</router-link>
         <router-link to="change">change</router-link>
-        <a href="">學術部文章</a>
-        <a href="">活動購票</a>
+        <router-link to="academic">學術策展部</router-link>
+        <a href="https://medium.com/ntuartfest">medium文章</a>
+        <a href="https://ntuaf23.backme.tw/shops/515?checked=true&locale=zh-TW">活動購票</a>
       </div>
 
       <div
@@ -34,8 +35,9 @@
       >
         <router-link to="sponser">合作夥伴</router-link>
         <router-link to="change">change</router-link>
-        <a href="">學術部文章</a>
-        <a href="">活動購票</a>
+        <router-link to="academic">學術策展部</router-link>
+        <a href="https://medium.com/ntuartfest">medium文章</a>
+        <a href="https://ntuaf23.backme.tw/shops/515?checked=true&locale=zh-TW">活動購票</a>
       </div>
     </div>
   </section>
