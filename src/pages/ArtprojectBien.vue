@@ -9,17 +9,20 @@
     <div class="wrapper">
       <div class="section">
         <div class="intro">
-          <div class="title">學術策展部｜理念介紹</div>
-          <div>你說：「我們生不逢時」，妳說：「曾經的美好年代榮景不再」
-          每個世代，都有著他們獨自的美麗與悲愁，思想與正義連結著社會的歷史脈絡與精神情境，隨著時間不斷的推移而變形，過程中，有你有我有他，讓我們一起反思、一起追溯、一起突破框架，擁抱不同的想法與觀點。</div>
-          <div>學術策展部旨在介紹並結合藝術形式與各式議題，透過講座、攝影作品與裝置藝術等多樣的藝術形式，進行各種不同議題的觀點與介紹，希望藉由藝術的角度看見不一樣的生活，進而對社會現況有所反思。</div>
+          <div class="title">變策展部｜理念介紹</div>
+          <div>人意識到自己的方式,常透過外界對自我的感應而形成。而人們所謂的自我,或對
+          於他人的認識,是否常只是經由社會的期待或判斷而生成的、固化的印象單元?透過問題
+          意識的提出、詮釋角度的轉換,我們希望去解構這些關於身分的思維。</div>
+          <div>從此自我認識、行為社會化的反思面向出發,我們試著用不同的藝術媒介去剖析一
+          個群體乃至於個別的人們,在日常生活中究竟是如何地看待或表現自我,而又是否受到了
+          他人觀點的影響,並且以裝置藝術、攝影展、舞劇表演等形式,呈現出我們的觀察。</div>
         </div>
         <div class="project-list">
           <div class="title">專案一覽</div>
           <mu-row gutter>
             <mu-col width="100" tablet="50" desktop="50">
               <div class="fb-video"
-              data-href="https://www.facebook.com/NTUartfest/videos/1358243914214029/"
+              data-href="https://www.facebook.com/NTUartfest/videos/1357235894314831/"
               data-allowfullscreen="true"
               data-autoplay="false"
               data-show-captions="true">
@@ -27,12 +30,13 @@
             </mu-col>
             <mu-col width="100" tablet="50" desktop="50">
               <div class="list">
-                <li>【相／鬱】自我肖像藝術實驗計畫</li>
-                <li>【以食為藝】飲食文化探究</li>
-                <li>【Bon Vogue】性別議題。舞蹈展演</li>
-                <li>【Queer & Space】性別議題。攝影展</li>
-                <li>【目集】轉型正義。影展</li>
-                <li>【溯】轉型正義。裝置藝術</li>
+                <li>【政治正確的精神錯亂】編導式攝影展</li>
+                <li>【畫像｜畫相】臉譜展覽與工作坊</li>
+                <li>【邃】互動裝置藝術</li>
+                <li>【形意】裝置藝術</li>
+                <li>【妖易】實境劇場</li>
+                <li>【烏合】影像創作與行為藝術</li>
+                <li>【WHAT If】舞蹈劇場</li>
               </div>
             </mu-col>
           </mu-row>
@@ -42,32 +46,24 @@
             <mu-col width="100" tablet="50" desktop="50">
               <div
               class="project-img"
-              :style="{ 'background-image': 'url(' + queer + ')' }"
+              :style="{ 'background-image': 'url(' + mysterious + ')' }"
               >
               </div>
             </mu-col>
             <mu-col width="100" tablet="50" desktop="50">
               <div>
-                <div class="title">Queer ＆ Space</div>
+                <div class="title">邃</div>
                 <div class="discription">
                   <div>
-                  廣義上，Queer（酷兒）泛指非主流性別、性傾向及性實踐者，但更有人說，Queer一詞亦可作為「不同於任一個族群、自居邊緣並拒絕被主流同化」的自我宣稱。
-                  </div>
-                  <br/>
-                  <div>
-                  空間是人們生活的座標，而當意義被加諸其上，空間便成了地方。 當社會以法律規範一夫一妻的婚姻正當性，便使 Queer 這般不在此範圍內的群體，逾越了社會所建構的地方，顯得「格格不入（out of place）」，進而再次創造屬於自己的地方。
-                  </div>
-                  <br/>
-                  <div>
-                  《Queer & Space》將透過攝影作品與訪談，呈現 Queer 透過身體與空間互動的故事， 那些關於逾越社會既有界線，以及關於創造集體或個人地方的過程，而這些生命經驗最終都指向一件事：讓他/她/它得以成為自己。
+                 本次展覽以「一個讓人意識到自我存在的窗口」為理念，利用外在空間的劃分及變形，擺設可與觀展者互動的裝置，使觀展者在走入進設計巧思的空間時，暫時剝離層層非自我主體的外衣。讓過去與當下糾纏不定的心靈狀態，外在眼光及個人價值的拉扯，形成辨證與肯定的過程，在無數光陰的縫隙間更加認識自我的存在。
                   </div>
                   <div class="place">
-                  ｜攝影展｜<br/>
-                  展期：05.05 - 05.26 | 10：00 - 21：00<br/>
+                  ｜互動式裝置藝術 ｜<br/>
+                  展期：05.08 - 05.26 平日｜12：00 - 20：00 <br/>
                   地點：校史館夾層書庫<br/>
                   ｜紀實文字作品｜<br/>
                   展期：05.09 - 05.26｜00：00 - 23：59<br/>
-                  地點：臺大藝術季網站
+                  地點：社科院外走廊
                   </div>
                   <a class="more" href="https://medium.com/ntuartfest/acad-gender/home">
                     more
@@ -88,14 +84,18 @@
             </mu-col>
             <mu-col width="100" tablet="50" desktop="50">
               <div>
-                <div class="title"> 以食為藝</div>
+                <div class="title"> 畫像｜畫相</div>
                 <div class="discription">
                   <div>
-                食物作為日常生活中不可或缺的能量來源，當中的概念不只是果腹與飽足，還包含著孕育出食物原料的自然風土及烹飪與飲食的人文風情，以及關於個性和情感的表達。 《以食為藝》將透過「藝術／技藝／生產／消費」四個主題的文字書寫，深入食物的文化面。
+                有別於舞台上京劇、崑曲裡各角色的扮相，八家將的臉譜是臺灣民俗與宗教結合的特有產物，每個家將在扮演神明的過程中，為了合其身份，一旦畫上臉譜即開始代表神明，所有的行為舉止皆需特別注意，保持莊嚴肅穆。
                   </div>
-                  <br/>
-                  <div>
-                  另外，我們也將透過講座，對臺灣這塊土地上所生產出來的食物，更進一步接觸與了解。 「食」是像動物呼吸一般自然的行為，我們每天都在經歷它，但《以食為藝》將與你一起跳脫「平常」，用不同的角度來體驗「食」這件事情。
+                  <div class="place">
+                  ｜展覽｜<br/>
+                  展期：05.05 - 05.26｜09：00 - 18：00 <br/>
+                  地點：第二學生活動中心3F Global Lounge
+                  ｜工作坊｜<br/>
+                  展期：05.14、05.21 | 13：00 - 15：00<br/>
+                  地點：第二學生活動中心3F Global Lounge
                   </div>
                 </div>
               </div>
@@ -233,12 +233,13 @@ export default {
   extends: {
     data() {
       return {
-        backgroundImage: 'static/images/academic/academic.png',
+        backgroundImage: 'static/images/artproject_bien/artproject_bien.png',
         queer: 'static/images/academic/queer.png',
         artfood: 'static/images/academic/art&food.png',
         retro: 'static/images/academic/retro.png',
         gloomy: 'static/images/academic/gloomy.jpg',
         see: 'static/images/academic/see.png',
+        mysterious: 'static/images/artproject_bien/mysterious.png',
       };
     },
   },

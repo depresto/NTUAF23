@@ -4,6 +4,7 @@ import Home from '@/pages/Home';
 import Change from '@/pages/Change';
 import Sponser from '@/pages/Sponser';
 import Academic from '@/pages/Academic';
+import ArtprojectBien from '@/pages/ArtprojectBien';
 
 Vue.use(Router);
 
@@ -28,6 +29,11 @@ export default new Router({
       path: '/academic',
       name: 'Academic',
       component: Academic,
+    },
+    {
+      path: '/artproject_bien',
+      name: 'artproject_bien',
+      component: ArtprojectBien,
     },
   ],
 });

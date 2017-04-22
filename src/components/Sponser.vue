@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper">
     <section>
-      <div class="h2">贊助夥伴</div>
+      <div class="h2">合作夥伴</div>
       <mu-row gutter class="card-row">
         <mu-col width="100" tablet="50" desktop="25" class="card class-a" v-for="s in classA" :key="s.id">
           <a :href="s.Link" target="blank">
@@ -13,18 +13,18 @@
         </mu-col width="100" tablet="50" desktop="33">
       </mu-row>
 
-      <div class="mt40 h3"> 感謝贊助 </div>
-
+      <div class="mt40 h3"> 媒體協力 </div>
       <mu-row gutter class="card-row">
-        <mu-col width="100" tablet="50" desktop="20" class="card class-a" v-for="s in classB" :key="s.id">
+        <mu-col width="100" tablet="50" desktop="20" class="card class-a" v-for="s in classC" :key="s.id">
           <a :href="s.Link" target="blank" class="paperB" :zDepth="1" >
           <img class="img" @click="handleOnClick(s)" :src="s.Logo[0].thumbnails.large.url" :alt="s.Logo[0].filename">
           </a>
         </mu-col width="100" tablet="50" desktop="33">
       </mu-row>
-      <div class="mt40 h3"> 媒體協力 </div>
+
+      <div class="mt40 h3"> 感謝贊助 </div>
       <mu-row gutter class="card-row">
-        <mu-col width="100" tablet="50" desktop="20" class="card class-a" v-for="s in classC" :key="s.id">
+        <mu-col width="100" tablet="50" desktop="20" class="card class-a" v-for="s in classB" :key="s.id">
           <a :href="s.Link" target="blank" class="paperB" :zDepth="1" >
           <img class="img" @click="handleOnClick(s)" :src="s.Logo[0].thumbnails.large.url" :alt="s.Logo[0].filename">
           </a>
