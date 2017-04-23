@@ -34,10 +34,10 @@
         class="menu"
         v-if="menuStateOpen && ww < mobileWidth"
       >
-        <router-link to="sponser">合作夥伴</router-link>
-        <router-link to="change">change</router-link>
         <router-link to="artproject_bien">變策展部</router-link>
         <router-link to="academic">學術策展部</router-link>
+        <router-link to="sponser">合作夥伴</router-link>
+        <router-link to="change">change</router-link>
         <a href="https://medium.com/ntuartfest">medium文章</a>
         <a href="https://ntuaf23.backme.tw/shops/515?checked=true&locale=zh-TW">活動購票</a>
       </div>
@@ -139,10 +139,15 @@ export default {
     background: rgba(255,255,255,0.9)
     position: fixed
     top: 0
-    padding-top: 20px
+    padding-top: 50px
     color: #69899C
     a
       color: #69899C
+      display: block
+      text-align: center
+      font-size: 1.2em
+      margin: 0.5em
+      line-height: 2em
   .toggle_menu
     z-index: 100
     color: black

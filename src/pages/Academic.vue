@@ -10,14 +10,13 @@
       <div class="section">
         <div class="intro">
           <div class="title">學術策展部｜理念介紹</div>
-          <div>你說：「我們生不逢時」，妳說：「曾經的美好年代榮景不再」
-          每個世代，都有著他們獨自的美麗與悲愁，思想與正義連結著社會的歷史脈絡與精神情境，隨著時間不斷的推移而變形，過程中，有你有我有他，讓我們一起反思、一起追溯、一起突破框架，擁抱不同的想法與觀點。</div>
+          <div>每個世代，都有著他們獨自的美麗與悲愁，而隨著時間不斷的推移，思想、正義跟隨世代一起變形。</div>
           <div>學術策展部旨在介紹並結合藝術形式與各式議題，透過講座、攝影作品與裝置藝術等多樣的藝術形式，進行各種不同議題的觀點與介紹，希望藉由藝術的角度看見不一樣的生活，進而對社會現況有所反思。</div>
         </div>
         <div class="project-list">
           <div class="title">專案一覽</div>
           <mu-row gutter>
-            <mu-col width="100" tablet="50" desktop="50">
+            <mu-col width="100" tablet="50" desktop="100">
               <div class="fb-video"
               data-href="https://www.facebook.com/NTUartfest/videos/1358243914214029/"
               data-allowfullscreen="true"
@@ -27,12 +26,134 @@
             </mu-col>
             <mu-col width="100" tablet="50" desktop="50">
               <div class="list">
-                <li>【相／鬱】自我肖像藝術實驗計畫</li>
-                <li>【以食為藝】飲食文化探究</li>
-                <li>【Bon Vogue】性別議題。舞蹈展演</li>
-                <li>【Queer & Space】性別議題。攝影展</li>
-                <li>【目集】轉型正義。影展</li>
-                <li>【溯】轉型正義。裝置藝術</li>
+                <li :class="{active:scrollPos == 0}">
+                  <a @click="$scrollTo(0)">
+                  【相／鬱】自我肖像藝術實驗計畫
+                  </a>
+                </li>
+                <li :class="{active:scrollPos == 1}">
+                  <a @click="$scrollTo(1)">
+                  【以食為藝】飲食文化探究
+                  </a>
+                </li>
+                <li :class="{active:scrollPos == 2}">
+                  <a @click="$scrollTo(2)">
+                【Bon Vogue】性別議題。舞蹈展演
+                  </a>
+                </li>
+              </div>
+            </mu-col>
+            <mu-col width="100" tablet="50" desktop="50">
+              <div class="list">
+                <li :class="{active:scrollPos == 3}">
+                  <a @click="$scrollTo(3)">
+                【Queer & Space】性別議題。攝影展
+                  </a>
+                </li>
+                <li :class="{active:scrollPos == 4}">
+                  <a @click="$scrollTo(4)">
+                【目集】轉型正義。影展
+                  </a>
+                </li>
+                <li :class="{active:scrollPos == 5}">
+                  <a @click="$scrollTo(5)">
+                  【溯】轉型正義。裝置藝術
+                  </a>
+                </li>
+              </div>
+            </mu-col>
+          </mu-row>
+        </div>
+
+        <div v-scroll-spy="scrollPos">
+        <div class="project">
+          <mu-row gutter>
+            <mu-col width="100" tablet="50" desktop="50">
+              <div
+              class="project-img"
+              :style="{ 'background-image': 'url(' + gloomy + ')' }"
+              >
+              </div>
+            </mu-col>
+            <mu-col width="100" tablet="50" desktop="50">
+              <div>
+                <div class="title">相／鬱</div>
+                <div class="discription">
+                  <div>
+                  隨著科技進步,在這人人皆為自媒體的時代,表露自己變得更加容易卻也更加困難,
+                  濾鏡、 修圖軟體種類推陳出新,人們無不在社群媒體上營造出一個最好的自己,而在那同
+                  時卻缺乏看見真實的自己的勇氣,受制於他人的眼光。
+                  </div>
+                  <br/>
+                  <div>
+                  我們希望藉由專案反轉人們對於自拍的理解,讓自我肖像成為 一種情緒引導的方式, 面對鏡頭並褪去自己的所有包袱,把情緒投射於空間,呈現出你認為的自己,而非他人期 待的你。
+                  </div>
+<!--                   <div class="place">
+                  ｜裝置作品｜<br/>
+                  時間：05.08 - 05.28｜09：00 - 18：00 <br/>
+                  地點：博雅草坪、文學院前、社科草坪、陳文成廣場
+                  ｜校園導覽｜<br/>
+                  時間：05.10、05.17、05.24 | 10:00 - 10:40、13:00 - 13:40 <br/>
+                  地點：博雅草坪、文學院前、社科草坪、陳文成廣場
+                  </div> -->
+                </div>
+              </div>
+            </mu-col>
+          </mu-row>
+        </div>
+        <div class="project">
+          <mu-row gutter>
+            <mu-col width="100" tablet="50" desktop="50">
+              <div
+              class="project-img"
+              :style="{ 'background-image': 'url(' + artfood + ')' }"
+              >
+              </div>
+            </mu-col>
+            <mu-col width="100" tablet="50" desktop="50">
+              <div>
+                <div class="title"> 以食為藝</div>
+                <div class="discription">
+                  <div>
+                食物作為日常生活中不可或缺的能量來源，當中的概念不只是果腹與飽足，還包含著孕育出食物原料的自然風土及烹飪與飲食的人文風情，以及關於個性和情感的表達。 《以食為藝》將透過「藝術／技藝／生產／消費」四個主題的文字書寫，深入食物的文化面。
+                  </div>
+                  <br/>
+                  <div>
+                  另外，我們也將透過講座，對臺灣這塊土地上所生產出來的食物，更進一步接觸與了解。 「食」是像動物呼吸一般自然的行為，我們每天都在經歷它，但《以食為藝》將與你一起跳脫「平常」，用不同的角度來體驗「食」這件事情。
+                  </div>
+                </div>
+              </div>
+            </mu-col>
+          </mu-row>
+        </div>
+        <div class="project">
+          <mu-row gutter>
+            <mu-col width="100" tablet="50" desktop="50">
+              <div
+              class="project-img"
+              :style="{ 'background-image': 'url(' + bonvogue + ')' }"
+              >
+              </div>
+            </mu-col>
+            <mu-col width="100" tablet="50" desktop="50">
+              <div>
+                <div class="title">Bon Vogue</div>
+                <div class="discription">
+                  <div>
+                  桑格塔「敢曝札記」中提出刻意放大並倒錯性別的美學觀。性別跨演模糊了男女的二元對立性，專案將藉由Voguing此種強調柔軟與陰性氣質的舞蹈表演，並輔以紀錄片呈現說明，製造出一種抗逆「理當如此」的顛覆性美學，破除人們對於性別的刻板印象。
+                  </div>
+                  <div class="place">
+                  ｜紀錄片｜<br/>
+                  展期：04.24 - 05.12｜09：00 - 18：00<br/>
+                  地點：第一學生活動中心、博雅電視牆<br/>
+                  ｜舞蹈展演｜<br/>
+                  展期：05.05｜21：00 開幕式Afterparty<br/>
+                  地點：第一學生活動中心 公共空間
+                  </div>
+                  <a class="more" href="https://medium.com/ntuartfest/acad-gender/home">
+                    more
+                  </a>
+                </div>
               </div>
             </mu-col>
           </mu-row>
@@ -82,21 +203,31 @@
             <mu-col width="100" tablet="50" desktop="50">
               <div
               class="project-img"
-              :style="{ 'background-image': 'url(' + artfood + ')' }"
+              :style="{ 'background-image': 'url(' + see + ')' }"
               >
               </div>
             </mu-col>
             <mu-col width="100" tablet="50" desktop="50">
               <div>
-                <div class="title"> 以食為藝</div>
+                <div class="title">目集</div>
                 <div class="discription">
                   <div>
-                食物作為日常生活中不可或缺的能量來源，當中的概念不只是果腹與飽足，還包含著孕育出食物原料的自然風土及烹飪與飲食的人文風情，以及關於個性和情感的表達。 《以食為藝》將透過「藝術／技藝／生產／消費」四個主題的文字書寫，深入食物的文化面。
+                  隨著科技進步,在這人人皆為自媒體的時代,表露自己變得更加容易卻也更加困難,
+                  濾鏡、 修圖軟體種類推陳出新,人們無不在社群媒體上營造出一個最好的自己,而在那同
+                  時卻缺乏看見真實的自己的勇氣,受制於他人的眼光。
                   </div>
                   <br/>
                   <div>
-                  另外，我們也將透過講座，對臺灣這塊土地上所生產出來的食物，更進一步接觸與了解。 「食」是像動物呼吸一般自然的行為，我們每天都在經歷它，但《以食為藝》將與你一起跳脫「平常」，用不同的角度來體驗「食」這件事情。
+                  我們希望藉由專案反轉人們對於自拍的理解,讓自我肖像成為 一種情緒引導的方式, 面對鏡頭並褪去自己的所有包袱,把情緒投射於空間,呈現出你認為的自己,而非他人期 待的你。
                   </div>
+<!--                   <div class="place">
+                  ｜裝置作品｜<br/>
+                  時間：05.08 - 05.28｜09：00 - 18：00 <br/>
+                  地點：博雅草坪、文學院前、社科草坪、陳文成廣場
+                  ｜校園導覽｜<br/>
+                  時間：05.10、05.17、05.24 | 10:00 - 10:40、13:00 - 13:40 <br/>
+                  地點：博雅草坪、文學院前、社科草坪、陳文成廣場
+                  </div> -->
                 </div>
               </div>
             </mu-col>
@@ -135,76 +266,7 @@
             </mu-col>
           </mu-row>
         </div>
-        <div class="project">
-          <mu-row gutter>
-            <mu-col width="100" tablet="50" desktop="50">
-              <div
-              class="project-img"
-              :style="{ 'background-image': 'url(' + gloomy + ')' }"
-              >
-              </div>
-            </mu-col>
-            <mu-col width="100" tablet="50" desktop="50">
-              <div>
-                <div class="title">相／鬱</div>
-                <div class="discription">
-                  <div>
-                  隨著科技進步,在這人人皆為自媒體的時代,表露自己變得更加容易卻也更加困難,
-                  濾鏡、 修圖軟體種類推陳出新,人們無不在社群媒體上營造出一個最好的自己,而在那同
-                  時卻缺乏看見真實的自己的勇氣,受制於他人的眼光。
-                  </div>
-                  <br/>
-                  <div>
-                  我們希望藉由專案反轉人們對於自拍的理解,讓自我肖像成為 一種情緒引導的方式, 面對鏡頭並褪去自己的所有包袱,把情緒投射於空間,呈現出你認為的自己,而非他人期 待的你。
-                  </div>
-<!--                   <div class="place">
-                  ｜裝置作品｜<br/>
-                  時間：05.08 - 05.28｜09：00 - 18：00 <br/>
-                  地點：博雅草坪、文學院前、社科草坪、陳文成廣場
-                  ｜校園導覽｜<br/>
-                  時間：05.10、05.17、05.24 | 10:00 - 10:40、13:00 - 13:40 <br/>
-                  地點：博雅草坪、文學院前、社科草坪、陳文成廣場
-                  </div> -->
-                </div>
-              </div>
-            </mu-col>
-          </mu-row>
-        </div>
-        <div class="project">
-          <mu-row gutter>
-            <mu-col width="100" tablet="50" desktop="50">
-              <div
-              class="project-img"
-              :style="{ 'background-image': 'url(' + see + ')' }"
-              >
-              </div>
-            </mu-col>
-            <mu-col width="100" tablet="50" desktop="50">
-              <div>
-                <div class="title">目集</div>
-                <div class="discription">
-                  <div>
-                  隨著科技進步,在這人人皆為自媒體的時代,表露自己變得更加容易卻也更加困難,
-                  濾鏡、 修圖軟體種類推陳出新,人們無不在社群媒體上營造出一個最好的自己,而在那同
-                  時卻缺乏看見真實的自己的勇氣,受制於他人的眼光。
-                  </div>
-                  <br/>
-                  <div>
-                  我們希望藉由專案反轉人們對於自拍的理解,讓自我肖像成為 一種情緒引導的方式, 面對鏡頭並褪去自己的所有包袱,把情緒投射於空間,呈現出你認為的自己,而非他人期 待的你。
-                  </div>
-<!--                   <div class="place">
-                  ｜裝置作品｜<br/>
-                  時間：05.08 - 05.28｜09：00 - 18：00 <br/>
-                  地點：博雅草坪、文學院前、社科草坪、陳文成廣場
-                  ｜校園導覽｜<br/>
-                  時間：05.10、05.17、05.24 | 10:00 - 10:40、13:00 - 13:40 <br/>
-                  地點：博雅草坪、文學院前、社科草坪、陳文成廣場
-                  </div> -->
-                </div>
-              </div>
-            </mu-col>
-          </mu-row>
-        </div>
+      </div>
       </div>
     </div>
     <foot></foot>
@@ -233,12 +295,14 @@ export default {
   extends: {
     data() {
       return {
+        scrollPos: 0,
         backgroundImage: 'static/images/academic/academic.png',
         queer: 'static/images/academic/queer.png',
         artfood: 'static/images/academic/art&food.png',
         retro: 'static/images/academic/retro.png',
         gloomy: 'static/images/academic/gloomy.jpg',
         see: 'static/images/academic/see.png',
+        bonvogue: 'static/images/academic/bonvogue.jpg',
       };
     },
   },
@@ -287,7 +351,8 @@ export default {
       line-height: 3em
       text-align: left
 .project
-  margin: 32px 0
+  margin: 20px 0
+  padding-top: 4em
   .project-img
     height: 400px
     width: 100%
