@@ -119,10 +119,12 @@ export default {
   .svg-fill-2
     fill: #E61773
 .information
+  width: 300px
   position: absolute
   top: 60%
   color: #fff
   right: 20%
+  text-align: left
 .place
   font-size: 1.5em
 </style>
