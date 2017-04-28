@@ -6,6 +6,7 @@
     <opening></opening>
     <introduce></introduce>
     <event></event>
+    <ActiveMap></ActiveMap>
     <sponser></sponser>
     <foot></foot>
   </div>
@@ -18,6 +19,7 @@ import Department from '@/components/Department';
 import Opening from '@/components/Opening';
 import Event from '@/components/Event';
 import Introduce from '@/components/Introduce';
+import ActiveMap from '@/components/ActiveMap';
 import Foot from '@/components/Footer';
 import NavBar from '@/components/NavBar';
 
@@ -32,6 +34,7 @@ export default {
     Foot,
     Introduce,
     NavBar,
+    ActiveMap,
   },
 };
 </script>
