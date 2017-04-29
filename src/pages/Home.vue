@@ -6,7 +6,8 @@
     <opening></opening>
     <introduce></introduce>
     <event></event>
-    <ActiveMap></ActiveMap>
+    <activeMap></activeMap>
+    <calendar></calendar>
     <sponser></sponser>
     <foot></foot>
   </div>
@@ -22,6 +23,7 @@ import Introduce from '@/components/Introduce';
 import ActiveMap from '@/components/ActiveMap';
 import Foot from '@/components/Footer';
 import NavBar from '@/components/NavBar';
+import Calendar from '@/components/Calendar';
 
 export default {
   name: 'home-page',
@@ -35,6 +37,7 @@ export default {
     Introduce,
     NavBar,
     ActiveMap,
+    Calendar,
   },
 };
 </script>
