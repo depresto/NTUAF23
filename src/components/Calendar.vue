@@ -29,7 +29,7 @@ import fullCalendar from 'vue-fullcalendar';
 const demoEvents = [
   {
     title: '公關 | 深夜電台',
-    start: '2017-05-01',
+    start: '2017-05-04',
     cssClass: ['purple', 'bg'],
     time: '23:00-24:00',
     bg: 'static/images/academic/retro.png',
@@ -59,7 +59,7 @@ const demoEvents = [
   {
     title: '開幕式彩繪臺大Afterparty',
     place: '地點',
-    start: '2017-05-02',
+    start: '2017-05-05',
     cssClass: ['darkgreen', 'bg'],
     bg: 'static/images/academic/retro.png',
   },
