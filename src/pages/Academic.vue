@@ -1,4 +1,5 @@
 <template>
+  <transition appear name="fade">
   <div>
     <navBar></navBar>
     <div
@@ -271,6 +272,7 @@
     </div>
     <foot></foot>
   </div>
+  </transition>
 </template>
 
 <script>

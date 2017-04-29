@@ -1,4 +1,5 @@
 <template>
+  <transition appear name="fade">
   <div>
     <navBar></navBar>
     <hero></hero>
@@ -11,6 +12,7 @@
     <sponser></sponser>
     <foot></foot>
   </div>
+  </transition>
 </template>
 
 <script>

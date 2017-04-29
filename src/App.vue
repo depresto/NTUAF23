@@ -1,7 +1,9 @@
 <template>
-  <section id="app">
-    <router-view></router-view>
-  </section>
+  <transition appear name="fade">
+    <section id="app">
+      <router-view></router-view>
+    </section>
+  </transition>
 </template>
 
 <script>
@@ -41,4 +43,12 @@ img {
   width: 100%;
 }
 
+</style>
+
+<style lang="sass">
+  .fade-enter-active, .fade-leave-active
+    transition: opacity .3s
+
+  .fade-enter, .fade-leave-to
+    opacity: 0
 </style>

@@ -1,18 +1,20 @@
 <template>
   <section class="section">
-    <div class="forcast" v-if="event">
-      <div
-        class="active-img"
-        :style="{ 'background-image': 'url(' + bg + ')' }"
-      >
+    <transition name="fade">
+      <div class="forcast" v-if="event">
+        <div
+          class="active-img"
+          :style="{ 'background-image': 'url(' + bg + ')' }"
+        >
+        </div>
+        <a :href="link" class="btn">前往報名</a>
+        <div><h2>{{event}}</h2></div>
+        <div v-if="place">地點 {{place}}</div>
+        <div v-if="time">時間  {{time}}</div>
+        <div @click="close" class="close">x</div>
       </div>
-      <a :href="link" class="btn">前往報名</a>
-      <div><h2>{{event}}</h2></div>
-      <div>地點 {{place}}</div>
-      <div v-if="time">時間  {{time}}</div>
-      <div @click="close" class="close">close</div>
-    </div>
-    <full-calendar :events="fcEvents" @eventClick="eventClick" locale="en" firstDay="1">
+    </transition>
+    <full-calendar :events="fcEvents" @eventClick="eventClick"  @dayClick="dayClick" locale="en" firstDay="1">
    }
 hhhh
   <template slot="fc-event-card" scope="p">
@@ -32,36 +34,39 @@ const demoEvents = [
     start: '2017-05-04',
     cssClass: ['purple', 'bg'],
     time: '23:00-24:00',
-    bg: 'static/images/academic/retro.png',
-    link: '',
+    bg: 'static/images/song.jpg',
+    link: 'https://www.facebook.com/events/1706423366316709/',
   },
   {
     title: '公關 | 深夜電台',
     start: '2017-05-12',
     cssClass: ['purple', 'bg'],
     time: '23:00-24:00',
-    bg: 'static/images/academic/retro.png',
+    bg: 'static/images/song.jpg',
+    link: 'https://www.facebook.com/events/1706423366316709/',
   },
   {
     title: '公關 | 深夜電台',
     start: '2017-05-19',
     cssClass: ['purple', 'bg'],
     time: '23:00-24:00',
-    bg: 'static/images/academic/retro.png',
+    bg: 'static/images/song.jpg',
+    link: 'https://www.facebook.com/events/1706423366316709/',
   },
   {
     title: '公關 | 深夜電台',
     start: '2017-05-26',
     cssClass: ['purple', 'bg'],
     time: '23:00-24:00',
-    bg: 'static/images/academic/retro.png',
+    bg: 'static/images/song.jpg',
+    link: 'https://www.facebook.com/events/1706423366316709/',
   },
   {
     title: '開幕式彩繪臺大Afterparty',
     place: '地點',
     start: '2017-05-05',
     cssClass: ['darkgreen', 'bg'],
-    bg: 'static/images/academic/retro.png',
+    bg: 'static/images/opening.png',
   },
   {
     title: '相鬱 | 講座',
@@ -80,7 +85,7 @@ const demoEvents = [
     cssClass: ['green', 'bg'],
     time: '19:00 - 21:00',
     place: '活大104',
-    bg: 'static/images/academic/retro.png',
+    bg: 'static/images/academic/see.png',
   },
   {
     title: '羅拔 Paradise City',
@@ -89,7 +94,7 @@ const demoEvents = [
     cssClass: ['orange', 'bg'],
     place: '活大B1',
     time: '19:00',
-    bg: 'static/images/academic/retro.png',
+    bg: 'static/images/artproject_xing/paradise.jpg',
   },
   {
     title: '溯 | 校園導覽',
@@ -133,7 +138,7 @@ const demoEvents = [
     cssClass: ['orange', 'bg'],
     place: '華南',
     time: '日落後',
-    bg: 'static/images/academic/retro.png',
+    bg: 'static/images/artproject_xing/headset.jpg',
   },
   {
     title: '探形 | 耳機共感體驗',
@@ -141,7 +146,7 @@ const demoEvents = [
     cssClass: ['orange', 'bg'],
     place: '華南',
     time: '日落後',
-    bg: 'static/images/academic/retro.png',
+    bg: 'static/images/artproject_xing/headset.jpg',
   },
   {
     title: '探形 | 耳機共感體驗',
@@ -149,7 +154,7 @@ const demoEvents = [
     cssClass: ['orange', 'bg'],
     place: '華南',
     time: '日落後',
-    bg: 'static/images/academic/retro.png',
+    bg: 'static/images/artproject_xing/headset.jpg',
   },
   {
     title: '妖易',
@@ -158,7 +163,7 @@ const demoEvents = [
     cssClass: ['blue', 'bg'],
     place: '社科3F',
     time: '16:30-19:30',
-    bg: 'static/images/academic/retro.png',
+    bg: 'static/images/artproject_bien/demon.jpg',
   },
   {
     title: '妖易',
@@ -167,7 +172,7 @@ const demoEvents = [
     cssClass: ['blue', 'bg'],
     place: '社科3F',
     time: '16:30-19:30',
-    bg: 'static/images/academic/retro.png',
+    bg: 'static/images/artproject_bien/demon.jpg',
   },
   {
     title: '烏合行為藝術',
@@ -176,7 +181,7 @@ const demoEvents = [
     cssClass: ['blue', 'bg'],
     place: '活大104',
     time: '12:30',
-    bg: 'static/images/academic/retro.png',
+    bg: 'static/images/artproject_bien/crow.png',
   },
   {
     title: '寶藏巖工作坊 x 身體日常計劃',
@@ -200,7 +205,7 @@ const demoEvents = [
     cssClass: ['blue', 'bg'],
     place: '二活3F',
     time: '13:00-15:00',
-    bg: 'static/images/academic/retro.png',
+    bg: 'static/images/artproject_bien/portrait.png',
   },
   {
     title: '畫像 | 畫相',
@@ -208,7 +213,7 @@ const demoEvents = [
     cssClass: ['blue', 'bg'],
     place: '二活3F',
     time: '13:00-15:00',
-    bg: 'static/images/academic/retro.png',
+    bg: 'static/images/artproject_bien/portrait.png',
   },
   {
     title: '制形現代舞蹈',
@@ -216,7 +221,8 @@ const demoEvents = [
     cssClass: ['orange', 'bg'],
     place: '博雅醉月湖側平台',
     time: '119:00、21:00',
-    bg: 'static/images/academic/retro.png',
+    bg: 'static/images/artproject_xing/dance.png',
+    link: 'https://www.facebook.com/events/1354841114597907/',
   },
   {
     title: 'ㄧㄢˋ市集',
@@ -236,7 +242,7 @@ const demoEvents = [
     end: '2017-05-28',
     cssClass: ['blue', 'bg'],
     place: '活大B1',
-    bg: 'static/images/academic/retro.png',
+    bg: 'static/images/artproject_bien/whatif.png',
   },
 ];
 
@@ -264,9 +270,17 @@ export default {
       this.bg = event.bg;
       this.link = event.link;
     },
+    dayClick() {
+      this.event = '';
+    },
     close() {
       this.event = null;
     },
+    // esc() {
+    //   if (event.key === 'Enter') {
+    //     console.log('enter key was pressed!');
+    //   }
+    // },
   },
 };
 </script>
@@ -289,18 +303,18 @@ export default {
     right: 0
     margin: 0 auto
     background: #E4EDEE
-    z-index: 2
+    z-index: 3
     text-align: left
     padding: 20px
     padding-left: 180px
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.18)
   .active-img
     @extend ._bcg-cover
-    width: 120px
-    height: 120px
+    width: 140px
+    height: 140px
     position: absolute
-    left: 30px
-    top: 30px
+    left: 20px
+    top: 20px
   .btn
     background: #fff
     padding: 0.4em 0.5em
@@ -313,8 +327,15 @@ export default {
     cursor: pointer
   .close
     position: absolute
-    top: 0px
-    right: 20px
+    top: 5px
+    right: 10px
+    cursor: pointer
+  .fade-enter-active, .fade-leave-active
+    transition: opacity .3s
+
+  .fade-enter, .fade-leave-to
+    opacity: 0
+
 </style>
 
 <style lang="sass" >
@@ -339,4 +360,12 @@ export default {
     color: #C30F23 !important
   .comp-full-calendar
     max-width: 1280px !important
+  .more-events
+    z-index: 2 !important
+  .full-calendar-body
+    .dates
+      .more-events
+        .more-body
+          background: #fff
+
 </style>
