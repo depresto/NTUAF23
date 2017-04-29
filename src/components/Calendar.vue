@@ -219,9 +219,7 @@ export default {
     },
   },
   methods: {
-    eventClick(event, jsEvent, pos) {
-      console.log('eventClick', event, jsEvent, pos);
-      console.log(event.title);
+    eventClick(event) {
       this.event = event.title;
       this.place = event.place;
       this.time = event.time;
@@ -251,7 +249,7 @@ export default {
     right: 0
     margin: 0 auto
     background: #E4EDEE
-    z-index: 10
+    z-index: 2
 </style>
 
 <style lang="sass" >
