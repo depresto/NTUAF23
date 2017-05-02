@@ -246,7 +246,18 @@ const demoEvents = [
   },
 ];
 
+function preloaderBg(img) {
+  return `url(${img}) no-repeat -9999px -9999px`;
+}
+
 export default {
+  created() {
+    const dom = document.createElement('div');
+    const background = demoEvents.map(evt => preloaderBg(evt.bg)).join(',');
+    dom.style.background = background;
+
+    document.body.appendChild(dom);
+  },
   data() {
     return {
       fcEvents: demoEvents,

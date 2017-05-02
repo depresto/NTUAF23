@@ -1,16 +1,60 @@
 <template>
-  <transition appear name="fade">
-    <section id="app">
-      <router-view></router-view>
-    </section>
-  </transition>
+    <div>
+      <div :class="loader" class="loader">
+        <img class="animation" src="static/images/hero/hero_headgif.gif">
+      </div>
+      <section id="app">
+        <router-view></router-view>
+      </section>
+    </div>
 </template>
 
 <script>
+// eslint-disable-next-line import/no-webpack-loader-syntax
+import Pace from 'imports-loader?define=>false!pace-progress';
+
 export default {
   name: 'app',
+  data() {
+    return {
+      loader: '',
+    };
+  },
+  created() {
+    // const timestamp = new Date();
+    Pace.start({
+      ajax: false,
+    });
+    Pace.on('done', () => {
+      // console.log('done');
+      // console.log(new Date() - timestamp);
+      this.loader = 'hidden';
+    });
+  },
 };
 </script>
+
+<style lang="sass">
+.hidden
+  display: none
+.show
+  display: block
+.animation
+  width: 100px
+  margin: 0 auto
+  position: fixed
+  left: 0
+  right: 0
+  top: 45%
+.loader
+  width: 100vw
+  height: 100vh
+  background: #E4EDEE
+  position: fixed
+  top: 0
+  right: 0
+  z-index: 100
+</style>
 
 <style>
 #app {

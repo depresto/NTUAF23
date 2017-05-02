@@ -1,21 +1,26 @@
 <template>
   <transition appear name="fade">
-  <div>
-    <navBar></navBar>
-    <hero></hero>
-    <department></department>
-    <opening></opening>
-    <introduce></introduce>
-    <event></event>
-    <activeMap></activeMap>
-    <calendar></calendar>
-    <sponser></sponser>
-    <foot></foot>
-  </div>
+    <div>
+      <div>
+        <navBar></navBar>
+        <hero></hero>
+        <department></department>
+        <opening></opening>
+        <introduce></introduce>
+        <event></event>
+        <activeMap></activeMap>
+        <calendar></calendar>
+        <sponser></sponser>
+        <foot></foot>
+      </div>
+    </div>
   </transition>
 </template>
 
 <script>
+// eslint-disable-next-line import/no-webpack-loader-syntax
+// import Pace from 'imports-loader?define=>false!pace-progress';
+
 import Sponser from '@/components/Sponser';
 import Hero from '@/components/Hero';
 import Department from '@/components/Department';
@@ -44,6 +49,17 @@ export default {
 };
 </script>
 
-<style lang="css" scoped>
-
+<style lang="sass">
+.hidden
+  display: none
+.show
+  display: block
+.animation
+  width: 100px
+  margin: 0 auto
+  position: fixed
+  left: 0
+  right: 0
+  top: 45%
 </style>
+

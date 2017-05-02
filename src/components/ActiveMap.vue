@@ -4,7 +4,7 @@
     <div class="section_map">
       <img class="map" :src="map" >
       <div @mouseover='filter = "第一學生活動中心" ' class="mark1">
-        <MapMarker></MapMarker>
+        <MapMarker fill="#F39800"></MapMarker>
       </div>
 
       <div @mouseover='filter = "第二學生活動中心" ' class="mark2">
@@ -139,14 +139,12 @@ export default {
   position: absolute
   top: 36%
   left: 52%
-  path
-    fill: #F39800
+  // color: red;
 .mark2
   position: absolute
   top: 60%
   left: 30%
-  path
-    fill: #E61773
+  color: #E61773
 .mark3
   position: absolute
   top: 40%
