@@ -14,7 +14,7 @@
           <p>
             或許所謂的世界是建立在人們的思想跟話語上的吧，就像幻燈片的本體或許只是一直轉著的膠卷跟那一束光一樣。  而當來自各個地方的各式各樣的人，一邊各自緩慢地或是劇烈地變化著的時候，關於世界的投影畫面，也一邊快速地變換著。變形於是指的是關於人的變形，也是世界的變形。  我們試著用藝術作品記錄下世界變形的過程，即便它不免在下一秒成為世界的一部分。
           </p>
-          <btn route="/change">更多關於變形</btn>
+<!--           <btn route="/change">更多關於變形</btn> -->
         </div>
       </div>
     </div>
@@ -39,7 +39,7 @@ export default {
   @import '../sass/settings'
 
   .row
-    margin: 0 2rem
+    margin: 0 2em
 
   .section
     max-width: 1280px
@@ -63,6 +63,7 @@ export default {
     color: #fff
     font-size: 1.1em
     line-height: 2em
+    overflow: hidden
     &:hover
       img
         transition: .5s
@@ -87,5 +88,33 @@ export default {
     background: $theme
     padding-top: 30px
     padding: 30px 50px
+
+  @media only screen and (max-width: 768px)
+    .intro
+      height: auto
+    .intro_main
+      position: relative
+      width: 100%
+      padding: 32px 32px
+      font-size: 1em
+      line-height: 1.5em
+      height: auto
+      img
+        opacity: 0.1
+      &:hover
+        img
+          transition: .5s
+          opacity: 0.2
+    .intro_discription
+      position: relative
+      width: 100%
+      padding: 0 32px
+      font-size: 0.8em
+      line-height: 1.5em
+      padding: 48px 32px
+      height: auto
+
+
+
 
 </style>
