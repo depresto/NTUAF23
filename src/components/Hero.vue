@@ -14,6 +14,10 @@
     	<img class="xing1" src="static/images/hero/Title_03.png">
     	<img class="xing2" src="static/images/hero/Title_04.png">
     </div>
+    <div class="title_mobile_only">
+      <img class="bian" src="static/images/hero/bian.png">
+      <img class="xing" src="static/images/hero/xing.png">
+    </div>
     <div class="h1">NTU<br/>ART<br/>FESTIVAL </div>
   </section>
 </template>
@@ -65,7 +69,7 @@ img {
   height: 315px;
   position: absolute;
 
-  left: calc(36% - 172px);
+  left: 20%;
   bottom: 130px;
 }
 .hero_body {
@@ -155,4 +159,41 @@ img {
   bottom: 0;
   right: 0;
 }
+</style>
+
+<style lang="sass" scoped>
+.title_mobile_only
+  display: none
+@media only screen and (max-width: 768px)
+  .h1
+    font-size: 20px
+  .title
+    display: none
+  .hero_head
+    height: 160px
+  .hero_hand
+    height: 20%
+  .hero_hand2
+    height: 22%
+  .hero_foot
+    height: 25%
+  .hero_foot2
+    height: 12%
+  .title_mobile_only
+    display: block
+    top: 100px
+    right: 40px
+    width: 280px
+    height: 240px
+    position: absolute
+  .bian
+    position: absolute
+    right: 0
+    top: 0
+    width: 180px
+  .xing
+    position: absolute
+    bottom: 0
+    right: 0
+    width: 180px
 </style>
