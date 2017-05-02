@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper">
   <section>
-    <h2> 活動售票 </h2>
+    <h2> 熱門活動 </h2>
     <mu-row gutter class="card-row row">
       <mu-col width="100" tablet="50" desktop="50" class="card class-a" v-for="s in events" :key="s.id">
         <a class="card" href="https://ntuaf23.backme.tw/shops/515">
@@ -203,4 +203,10 @@ section{
 .more:hover > .more_btn {
   box-shadow: 0 2px 6px rgba(0,0,0,.117647), 0 2px 4px rgba(0,0,0,.117647);
 }
+</style>
+
+<style lang="sass" scoped>
+@media only screen and (max-width: 768px)
+  .bg
+    height: 220px
 </style>
