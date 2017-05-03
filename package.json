@@ -22,6 +22,7 @@
     "vue-awesome": "^2.2.1",
     "vue-fullcalendar": "^1.0.9",
     "vue-router": "^2.2.0",
+    "vue-youtube-embed": "^2.1.0",
     "vue2-scrollspy": "^1.1.2"
   },
   "devDependencies": {

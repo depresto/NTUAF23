@@ -25,7 +25,7 @@
           <div class="discription">
             帶領大家理解藝術治療內涵當中非常重視的結構與解構。讓參與者跟著講師的腳步
           </div>
-          <btn class="btn" route="/change">現在就出發</btn>
+          <btn class="btn" route="/artproject_bien">變策展部</btn>
 <!--           <img class="department1_img" src="static/images/hero/hero_head.png"> -->
         </div>
       </mu-col>
@@ -41,7 +41,7 @@
           <div class="discription">
             帶領大家理解藝術治療內涵當中非常重視的結構與解構。讓參與者跟著講師的腳步
           </div>
-          <btn class="btn" route="/change">現在就出發</btn>
+          <btn class="btn" route="/artproject_xing">形策展部</btn>
 <!--           <img class="department1_img" src="static/images/hero/hero_hand.png"> -->
         </div>
       </mu-col>

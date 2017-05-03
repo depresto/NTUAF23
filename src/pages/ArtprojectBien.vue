@@ -20,13 +20,14 @@
         </div>
         <div class="project-list">
           <mu-row gutter>
-            <mu-col width="100" tablet="50" desktop="100">
-              <div class="fb-video"
+            <mu-col width="100" tablet="100" desktop="100">
+<!--               <div class="fb-video"
               data-href="https://www.facebook.com/NTUartfest/videos/1357235894314831/"
               data-allowfullscreen="true"
               data-autoplay="false"
               data-show-captions="true">
-              </div>
+              </div> -->
+              <youtube :video-id="videoId" class="youtube"></youtube>
             </mu-col>
             <mu-col width="100" tablet="50" desktop="33">
             專案一覽表
@@ -338,6 +339,7 @@ export default {
         demon: 'static/images/artproject_bien/demon.jpg',
         crow: 'static/images/artproject_bien/crow.png',
         whatif: 'static/images/artproject_bien/whatif.png',
+        videoId: 'XWg8ZifVkcQ',
       };
     },
   },
@@ -431,4 +433,25 @@ a
       background: $theme
       color: #fff
 
+</style>
+<style lang="sass" scoped>
+  @media only screen and (max-width: 768px)
+    .hero
+      height: 280px
+    .project
+      .project-img
+        height: 200px
+        margin-bottom: 10px
+</style>
+<style lang="sass">
+  .youtube
+    margin-bottom: 20px
+    iframe
+      width: 100%
+      height: 640px
+  @media only screen and (max-width: 768px)
+    .youtube
+      iframe
+        width: 100%
+        height: 240px
 </style>

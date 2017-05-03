@@ -21,12 +21,13 @@
           <div class="title">專案一覽</div>
           <mu-row gutter>
             <mu-col width="100" tablet="50" desktop="100">
-              <div class="fb-video"
+<!--               <div class="fb-video"
               data-href="https://www.facebook.com/NTUartfest/videos/1358243914214029/"
               data-allowfullscreen="true"
               data-autoplay="false"
               data-show-captions="true">
-              </div>
+              </div> -->
+              <youtube :video-id="videoId" class="youtube"></youtube>
             </mu-col>
             <mu-col width="100" tablet="50" desktop="50">
               <div class="list">
@@ -312,6 +313,7 @@ export default {
         see: 'static/images/academic/see.png',
         bonvogue: 'static/images/academic/bonvogue.jpg',
         loader: '',
+        videoId: '0z0E56aaLf8',
       };
     },
   },
@@ -422,3 +424,25 @@ export default {
   right: 0
   z-index: 100
 </style>
+<style lang="sass" scoped>
+  @media only screen and (max-width: 768px)
+    .hero
+      height: 280px
+    .project
+      .project-img
+        height: 200px
+        margin-bottom: 10px
+</style>
+<style lang="sass">
+  .youtube
+    margin-bottom: 20px
+    iframe
+      width: 100%
+      height: 640px
+  @media only screen and (max-width: 768px)
+    .youtube
+      iframe
+        width: 100%
+        height: 240px
+</style>
+

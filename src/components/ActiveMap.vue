@@ -121,7 +121,7 @@ export default {
   position: absolute
   top: 60%
   color: #fff
-  right: 20%
+  right: 13%
   text-align: left
 .place
   font-size: 1.5em

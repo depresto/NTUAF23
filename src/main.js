@@ -5,11 +5,14 @@ import MuseUI from 'muse-ui';
 import Scrollspy from 'vue2-scrollspy';
 import 'muse-ui/dist/muse-ui.css';
 
+import VueYouTubeEmbed from 'vue-youtube-embed';
+
 import App from './App';
 import router from './router';
 
 
 Vue.use(Scrollspy);
+Vue.use(VueYouTubeEmbed);
 Vue.use(MuseUI);
 
 // eslint-disable-next-line no-new
