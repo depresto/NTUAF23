@@ -346,7 +346,9 @@ export default {
 
   .fade-enter, .fade-leave-to
     opacity: 0
-
+  @media only screen and (max-width: 768px)
+    .forcast
+      width: 320px
 </style>
 
 <style lang="sass" >
@@ -378,5 +380,4 @@ export default {
       .more-events
         .more-body
           background: #fff
-
 </style>
