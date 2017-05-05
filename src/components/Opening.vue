@@ -23,6 +23,14 @@
               <li> 21:00 - 22:00 After Party</li>
             </div>
           </div>
+          <div class="cass">
+            「Hello Nico」<br/>
+            他們的音樂柔中帶刺，逼迫你面對自己的無助，卻又輕輕撫慰著傷口。<br/>
+            「Crispy脆樂團」<br/>
+            從日常生活出發，以敘事般的口吻，反應成長所經歷的不同心境。<br/>
+            「I Mean Us」<br/>
+            囈語呢喃，如夢似幻的氛圍，唱著世紀末濫情歌。<br/>
+          </div>
         </div>
       </div>
     </section>
@@ -56,7 +64,7 @@ export default {
 
   .section
     max-width: 1280px
-    margin:  120px auto
+    margin:  30px auto
     margin-top: 20px
 
   .intro
@@ -66,8 +74,10 @@ export default {
 
   .time
     max-width: 400px
-    margin: 0 auto
-    text-align: justify
+    margin: 20px auto
+    text-align: center
     li
       display: block
+  .cass
+    text-align: center
 </style>

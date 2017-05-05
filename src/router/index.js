@@ -6,44 +6,9 @@ import Sponser from '@/pages/Sponser';
 import Academic from '@/pages/Academic';
 import ArtprojectBien from '@/pages/ArtprojectBien';
 import ArtprojectXing from '@/pages/ArtprojectXing';
+import Qa from '@/pages/Qa';
 
 Vue.use(VueRouter);
-
-// export default new Router({
-//   routes: [
-//     {
-//       path: '/',
-//       name: 'Home',
-//       component: Home,
-//     },
-//     {
-//       path: '/change',
-//       name: 'Change',
-//       component: Change,
-//     },
-//     {
-//       path: '/sponser',
-//       name: 'Sponser',
-//       component: Sponser,
-//     },
-//     {
-//       path: '/academic',
-//       name: 'Academic',
-//       component: Academic,
-//     },
-//     {
-//       path: '/artproject_bien',
-//       name: 'artproject_bien',
-//       component: ArtprojectBien,
-//     },
-//     {
-//       path: '/artproject_Xing',
-//       name: 'artproject_Xing',
-//       component: ArtprojectXing,
-//     },
-//   ],
-// });
-
 
 const routes = [
   {
@@ -75,6 +40,11 @@ const routes = [
     path: '/artproject_Xing',
     name: 'artproject_Xing',
     component: ArtprojectXing,
+  },
+  {
+    path: '/Q&A',
+    name: 'Q&A',
+    component: Qa,
   },
 ];
 

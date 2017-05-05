@@ -15,6 +15,7 @@
         <router-link to="artproject_bien">變策展部</router-link>
         <router-link to="artproject_xing">形策展部</router-link>
         <router-link to="academic">學術策展部</router-link>
+         <router-link to="Q&A">常見問題</router-link>
         <router-link to="sponser">合作夥伴</router-link>
         <a href="https://medium.com/ntuartfest">medium文章</a>
         <a href="https://ntuaf23.backme.tw/shops/515?checked=true&locale=zh-TW">活動購票</a>
@@ -37,6 +38,7 @@
         <router-link to="artproject_bien">變策展部</router-link>
         <router-link to="artproject_xing">形策展部</router-link>
         <router-link to="academic">學術策展部</router-link>
+        <router-link to="Q&A">常見問題</router-link>
         <router-link to="sponser">合作夥伴</router-link>
         <a href="https://medium.com/ntuartfest">medium文章</a>
         <a href="https://ntuaf23.backme.tw/shops/515?checked=true&locale=zh-TW">活動購票</a>

@@ -22,6 +22,16 @@
     </div>
     <div class="wrapper">
       <div class="section">
+        <div class="mt40 h3"> 媒體協力 </div>
+        <mu-row gutter class="card-row">
+          <mu-col width="100" tablet="25" desktop="25" class=" class-d" v-for="s in classC" :key="s.id">
+            <a :href="s.Link" target="blank" class="paperB" :zDepth="1" >
+                <img class="img_a" @click="handleOnClick(s)" :src="s.Logo[0].thumbnails.large.url" :alt="s.Logo[0].filename">
+            </a>
+          </mu-col>
+        </mu-row>
+      </div>
+      <div class="section">
         <div class="mt40 h3"> 感謝贊助 </div>
         <mu-row gutter class="card-row">
           <mu-col width="100" tablet="25" desktop="25" class=" class-d" v-for="s in classA" :key="s.id">
@@ -69,6 +79,9 @@ export default {
     },
     classD() {
       return this.sponsors.filter(spnsor => spnsor.Class[1] === 'class_D');
+    },
+    classC() {
+      return this.sponsors.filter(spnsor => spnsor.Class[0] === 'class_C');
     },
   },
 

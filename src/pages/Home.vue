@@ -5,7 +5,7 @@
         <navBar></navBar>
         <hero></hero>
         <department></department>
-        <opening></opening>
+<!--         <opening></opening> -->
         <introduce></introduce>
         <event></event>
         <activeMap></activeMap>
