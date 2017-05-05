@@ -3239,6 +3239,10 @@ node-dir@^0.1.10:
   dependencies:
     minimatch "^3.0.2"
 
+node-ensure@^0.0.0:
+  version "0.0.0"
+  resolved "https://registry.yarnpkg.com/node-ensure/-/node-ensure-0.0.0.tgz#ecae764150de99861ec5c810fd5d096b183932a7"
+
 node-gyp@^3.3.1:
   version "3.6.0"
   resolved "https://registry.yarnpkg.com/node-gyp/-/node-gyp-3.6.0.tgz#7474f63a3a0501161dda0b6341f022f14c423fa6"
@@ -3606,6 +3610,13 @@ pbkdf2@^3.0.3:
   resolved "https://registry.yarnpkg.com/pbkdf2/-/pbkdf2-3.0.9.tgz#f2c4b25a600058b3c3773c086c37dbbee1ffe693"
   dependencies:
     create-hmac "^1.1.2"
+
+pdfjs-dist@^1.7.418:
+  version "1.8.323"
+  resolved "https://registry.yarnpkg.com/pdfjs-dist/-/pdfjs-dist-1.8.323.tgz#23c7501c6e7855bf1c7566e72eeceb4e86419190"
+  dependencies:
+    node-ensure "^0.0.0"
+    worker-loader "^0.8.0"
 
 performance-now@^0.2.0:
   version "0.2.0"
@@ -4890,6 +4901,17 @@ vue-loader@^11.1.4:
     vue-style-loader "^2.0.0"
     vue-template-es2015-compiler "^1.2.2"
 
+vue-pdf@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/vue-pdf/-/vue-pdf-1.2.1.tgz#24e460afce1c28ba9c2a885846bd269d783428db"
+  dependencies:
+    pdfjs-dist "^1.7.418"
+    vue-resize-sensor "^1.0.0"
+
+vue-resize-sensor@^1.0.0:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/vue-resize-sensor/-/vue-resize-sensor-1.1.1.tgz#0e8a09c939083d4c605341ae7c08f364ffcef1cd"
+
 vue-router@^2.2.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-2.3.0.tgz#a25c8359e8ca989d22ce79f64322eb0ad0c8670f"
@@ -5045,6 +5067,12 @@ wordwrap@0.0.2:
 wordwrap@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/wordwrap/-/wordwrap-1.0.0.tgz#27584810891456a4171c8d0226441ade90cbcaeb"
+
+worker-loader@^0.8.0:
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/worker-loader/-/worker-loader-0.8.0.tgz#13582960dcd7d700dc829d3fd252a7561696167e"
+  dependencies:
+    loader-utils "^1.0.2"
 
 wrap-ansi@^2.0.0:
   version "2.1.0"

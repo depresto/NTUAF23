@@ -23,33 +23,51 @@
 
 <!--  sub_nav 開頭     -->
       <div class="nav">
-        <li :class="{active:scrollPos == 0}">
-         <a @click="$scrollTo(0)">藝術季售票活動一覽</a>
-        </li>
-        <li :class="{active:scrollPos == 1}">
-         <a @click="$scrollTo(1)">藝術季索票活動一覽</a>
-        </li>
-        <div :class="{active:scrollPos == 2}">
-           <a @click="$scrollTo(2)">演出當天驗票方式</a>
-        </div>
-        <div :class="{active:scrollPos == 3}">
-           <a @click="$scrollTo(3)">退票與退款方式</a>
-        </div>
-        <div :class="{active:scrollPos == 4}">
-          <a @click="$scrollTo(4)"> 索票頁面介紹</a>
-        </div>
-        <div :class="{active:scrollPos == 5}">
-          <a @click="$scrollTo(5)"> 演出當天驗票方式</a>
-        </div>
-        <div :class="{active:scrollPos == 4}">
-          <a @click="$scrollTo(4)">各種常見問題</a>
-        </div>
+        <mu-row gutter>
+          <mu-col width="100" tablet="100" desktop="33" class="bgc bgc-b">
+            <div>
+              <li :class="{active:scrollPos == 0}">
+                <a @click="$scrollTo(0)">售票活動一覽</a>
+              <li :class="{active:scrollPos == 2}">
+                <a @click="$scrollTo(2)">演出當天驗票方式</a>
+              </li>
+              <div :class="{active:scrollPos == 3}">
+                 <a @click="$scrollTo(3)">退票與退款方式</a>
+              </div>
+              </li>
+            </div>
+          </mu-col>
+          <mu-col width="100" tablet="100" desktop="33" class="bgc bgc-y">
+            <div>
+              <li :class="{active:scrollPos == 1}">
+               <a @click="$scrollTo(1)">藝術季索票活動一覽</a>
+              </li>
+              <li :class="{active:scrollPos == 4}">
+                <a @click="$scrollTo(4)"> 索票頁面介紹</a>
+              </li>
+              <li :class="{active:scrollPos == 5}">
+                <a @click="$scrollTo(5)"> 演出當天驗票方式</a>
+              </li>
+            </div>
+          </mu-col>
+          <mu-col width="100" tablet="100" desktop="33" class="bgc bgc-r">
+            <div>
+              <div :class="{active:scrollPos == 6}">
+                <a @click="$scrollTo(6)">各種常見問題</a>
+              </div>
+              <div :class="{active:scrollPos == 6}">
+                <a @click="$scrollTo(6)">退票注意</a>
+              </div>
+            </div>
+          </mu-col>
+        </mu-row>
       </div>
 <!--  sub_nav 結束     -->
+
       <div v-scroll-spy="scrollPos" class="container">
 
-        <div class="section">
-          <div>
+        <div class="section bgc-b">
+          <div class="section_container">
             <div class="title">售票活動</div>
             <p>所有售票活動開放線上購票至演出當天中午</p>
             <mu-row gutter class="project">
@@ -71,6 +89,7 @@
                 </div>
               </mu-col>
             </mu-row>
+            <hr>
             <mu-row gutter class="project">
               <mu-col width="100" tablet="100" desktop="20">
                 <div>實境劇場</div>
@@ -92,6 +111,7 @@
                 </div>
               </mu-col>
             </mu-row>
+            <hr>
             <mu-row gutter class="project">
               <mu-col width="100" tablet="100" desktop="20">
                 <div>舞蹈劇場</div>
@@ -114,8 +134,8 @@
           </div>
         </div>
 
-        <div class="section">
-          <div>
+        <div class="section bgc-y">
+          <div class="section_container">
           <div class="title">索票活動</div>
           <mu-row gutter class="project">
             <mu-col width="100" tablet="100" desktop="20">
@@ -137,6 +157,7 @@
               </div>
             </mu-col>
           </mu-row>
+          <hr>
           <mu-row gutter class="project">
             <mu-col width="100" tablet="100" desktop="20">
               <div>現代舞蹈</div>
@@ -154,6 +175,7 @@
               </div>
             </mu-col>
           </mu-row>
+          <hr>
           <mu-row gutter class="project">
             <mu-col width="100" tablet="100" desktop="20">
               <div>耳機共感體驗 </div>
@@ -177,8 +199,117 @@
           </div>
         </div>
 
-        <div class="section">
-            <div class="title">演出當天驗票方式</div>
+        <div class="section bgc-b">
+            <div class="section_container">
+              <div class="title">售票活動：驗票方式</div>
+              <div>於演出報到現場確認</div>
+              <div>
+              1.交易編號<br/>
+              2.購票人姓名<br/>
+              3.購票人手機號碼<br/>
+              </div>
+              <span>備註 : 藝術季方只認資訊，不認人。
+              座位保留至演出開始後10分鐘，10分鐘後即開放現場補位購票，現場購票方式採現金購票。
+              </span>
+            </div>
+        </div>
+        <div class="section bgc-b">
+            <div class="section_container">
+              <div class="title">售票活動：退票與退款方式</div>
+              <p>*於演出活動前五天起不接受退票，亦即不提供退款。演出當天算一天。舉例 : 購買5/26號的表演，則最後可退款時間為5/21 23:59分。<br/>
+              *交易手續費不予退回。
+              <br/>
+              備註 : 藝術季方只認資訊，不認人。
+              </p>
+              <mu-row gutter class="project">
+                <mu-col width="100" tablet="100" desktop="20">
+                  <div class="step">STEP 1 </div>
+                </mu-col>
+                <mu-col width="100" tablet="100" desktop="80">
+                  <div>
+                  私訊粉絲專頁告知退款需求，須提供:<br/>
+                  1.交易編號<br/>
+                  2.購票人姓名<br/>
+                  3.購票人手機號碼<br/>
+                  4.退票張數<br/>
+                  備註 : 藝術季方只認資訊，不認人。<br/>
+                  </div>
+                </mu-col>
+              </mu-row>
+              <mu-row gutter class="project">
+                <mu-col width="100" tablet="100" desktop="20">
+                  <div>STEP 2-1 </div>
+                </mu-col>
+                <mu-col width="100" tablet="100" desktop="80">
+                  <div>
+                  信用卡付款者直接會以售票平台退款，金流在當期或下一期帳單回收。
+                  </div>
+                </mu-col>
+              </mu-row>
+              <mu-row gutter class="project">
+                <mu-col width="100" tablet="100" desktop="20">
+                  <div>STEP 2-2 </div>
+                </mu-col>
+                <mu-col width="100" tablet="100" desktop="80">
+                  <div>
+                  虛擬ATM及超商付款者，請親自至臺大藝術季校門口小木屋資訊站簽收並領取現金退款，須提供 : <br/>
+                  1.交易編號 <br/>
+                  2.購票人姓名 <br/>
+                  3.購票人手機號碼 <br/>
+                  4.退票張數 <br/>
+                  </div>
+                </mu-col>
+              </mu-row>
+            </div>
+        </div>
+        <div class="section bgc-y">
+            <div class="section_container">
+              <div class="title">索票活動：索票頁面介紹</div>
+              <mu-row gutter class="project">
+                <mu-col width="100" tablet="100" desktop="20">
+                  <div class="step">STEP 1 </div>
+                </mu-col>
+                <mu-col width="100" tablet="100" desktop="80">
+                  <div>
+                  點選活動頁售票連結
+                  </div>
+                </mu-col>
+              </mu-row>
+              <mu-row gutter class="project">
+                <mu-col width="100" tablet="100" desktop="20">
+                  <div>STEP 2 </div>
+                </mu-col>
+                <mu-col width="100" tablet="100" desktop="80">
+                  <div>
+                  點選欲參加之索票活動
+                  </div>
+                </mu-col>
+              </mu-row>
+              <mu-row gutter class="project">
+                <mu-col width="100" tablet="100" desktop="20">
+                  <div>STEP 3 </div>
+                </mu-col>
+                <mu-col width="100" tablet="100" desktop="80">
+                  <div>
+                    點選商品簡介
+                  </div>
+                </mu-col>
+              </mu-row>
+              <mu-row gutter class="project">
+                <mu-col width="100" tablet="100" desktop="20">
+                  <div>STEP 4 </div>
+                </mu-col>
+                <mu-col width="100" tablet="100" desktop="80">
+                  <div>
+                    點選索票連結
+                  </div>
+                </mu-col>
+              </mu-row>
+            </div>
+        </div>
+        <div class="section bgc-y">
+          <div class="section_container">
+            <div class="title">索票活動：驗票方式</div>
             <div>於演出報到現場確認</div>
             <div>
             1.交易編號<br/>
@@ -188,98 +319,10 @@
             <span>備註 : 藝術季方只認資訊，不認人。
             座位保留至演出開始後10分鐘，10分鐘後即開放現場補位購票，現場購票方式採現金購票。
             </span>
+          </div>
         </div>
-        <div class="section">
-            <div class="title">退票與退款方式</div>
-            <p>*於演出活動前五天起不接受退票，亦即不提供退款。演出當天算一天。舉例 : 購買5/26號的表演，則最後可退款時間為5/21 23:59分。<br/>
-            *交易手續費不予退回。
-            <br/>
-            備註 : 藝術季方只認資訊，不認人。
-            </p>
-            <mu-row gutter class="project">
-              <mu-col width="100" tablet="100" desktop="20">
-                <div>STEP 1 </div>
-              </mu-col>
-              <mu-col width="100" tablet="100" desktop="80">
-                <div>
-                私訊粉絲專頁告知退款需求，須提供:<br/>
-                1.交易編號<br/>
-                2.購票人姓名<br/>
-                3.購票人手機號碼<br/>
-                4.退票張數<br/>
-                備註 : 藝術季方只認資訊，不認人。<br/>
-                </div>
-              </mu-col>
-            </mu-row>
-            <mu-row gutter class="project">
-              <mu-col width="100" tablet="100" desktop="20">
-                <div>STEP 2-1 </div>
-              </mu-col>
-              <mu-col width="100" tablet="100" desktop="80">
-                <div>
-                信用卡付款者直接會以售票平台退款，金流在當期或下一期帳單回收。
-                </div>
-              </mu-col>
-            </mu-row>
-            <mu-row gutter class="project">
-              <mu-col width="100" tablet="100" desktop="20">
-                <div>STEP 2-2 </div>
-              </mu-col>
-              <mu-col width="100" tablet="100" desktop="80">
-                <div>
-                虛擬ATM及超商付款者，請親自至臺大藝術季校門口小木屋資訊站簽收並領取現金退款，須提供 : <br/>
-                1.交易編號 <br/>
-                2.購票人姓名 <br/>
-                3.購票人手機號碼 <br/>
-                4.退票張數 <br/>
-                </div>
-              </mu-col>
-            </mu-row>
-        </div>
-        <div class="section">
-            <div class="title">索票頁面介紹</div>
-            <mu-row gutter class="project">
-              <mu-col width="100" tablet="100" desktop="20">
-                <div>STEP 1 </div>
-              </mu-col>
-              <mu-col width="100" tablet="100" desktop="80">
-                <div>
-                點選活動頁售票連結
-                </div>
-              </mu-col>
-            </mu-row>
-            <mu-row gutter class="project">
-              <mu-col width="100" tablet="100" desktop="20">
-                <div>STEP 2 </div>
-              </mu-col>
-              <mu-col width="100" tablet="100" desktop="80">
-                <div>
-                點選欲參加之索票活動
-                </div>
-              </mu-col>
-            </mu-row>
-            <mu-row gutter class="project">
-              <mu-col width="100" tablet="100" desktop="20">
-                <div>STEP 3 </div>
-              </mu-col>
-              <mu-col width="100" tablet="100" desktop="80">
-                <div>
-                  點選商品簡介
-                </div>
-              </mu-col>
-            </mu-row>
-            <mu-row gutter class="project">
-              <mu-col width="100" tablet="100" desktop="20">
-                <div>STEP 4 </div>
-              </mu-col>
-              <mu-col width="100" tablet="100" desktop="80">
-                <div>
-                  點選索票連結
-                </div>
-              </mu-col>
-            </mu-row>
-        </div>
-        <div class="section">
+        <div class="section bgc-r">
+          <div class="section_container">
           <div class="title">我知道你還有問題 Q&A</div>
           <div>Q : 幫親朋好友買票是不是大家要同時間進場?</div>
           <div>A : 不需要同時進場，僅需要提供驗票資訊即可入場。</div>
@@ -287,6 +330,7 @@
           <div>A : 前往購票</div>
           <div>Q : 詳細表演資訊在哪裡找?</div>
           <div>A : 臺大藝術季 >> 活動 >> 找到了</div>
+          </div>
         </div>
       </div>
       <foot></foot>
@@ -323,9 +367,18 @@ export default {
 
 <style lang="sass" scoped>
   @import '../sass/settings'
+  @import url('https://fonts.googleapis.com/css?family=Patrick+Hand')
+  .step
+    font-family: 'Patrick Hand',Patrick Hand,cursive
+  hr
+    color: #fff
+    background-color: #fff
+    border: 1px solid #fff
   .project
+    margin: 0 auto
     margin-bottom: 20px
     margin-top: 10px
+
     div
       text-align: left
   .hero
@@ -361,22 +414,42 @@ export default {
     // background: #E4EDEE
     font: 5em/1 Open Sans, Impact !important
   .nav
-    margin: 20px 0
+    margin: 20px auto
+    max-width: 1080px
     li
       display: block
     a
+      color: #FFF
+      font-size: 1.2em
+      line-height: 1.8em
       &:hover
        cursor: pointer
+       color: #69899C
+  .bgc
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 140px
+    color: #fff
+  .bgc-b
+    background: #BAE4EE
+  .bgc-y
+    background: #F0DFCB
+  .bgc-r
+    background: #F48786
   .section
+    max-width: 1080px
+    color: #fff
+  .section_container
     max-width: 640px
-    padding-top: 1.5em
-    margin: 0 2em
+    margin: 30px auto
+    padding: 30px 12px
   .title
     font-size: 1.6em
     margin-top: 1em
     line-height: 2em
   .container
-    max-width: 640px
+    max-width: 1080px
     margin: 0 auto
     margin-bottom: 100px
   svg
@@ -396,10 +469,21 @@ export default {
       margin: auto
     .h2
       bottom: 80px
+    .bgc
+      height: 100px
+      color: #fff
+    .nav
+      margin: 15px auto
+      a
+        font-size: 1em
+        line-height: 1.4em
+  @media only screen and (max-width: 640px)
+    .section
+      margin: 0 1em
 </style>
 
 <style lang="scss" scoped>
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:800);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:800);
 .text {
   fill: none;
   stroke-width: 2;

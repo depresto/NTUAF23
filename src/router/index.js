@@ -1,7 +1,6 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Home from '@/pages/Home';
-import Change from '@/pages/Change';
 import Sponser from '@/pages/Sponser';
 import Academic from '@/pages/Academic';
 import ArtprojectBien from '@/pages/ArtprojectBien';
@@ -15,11 +14,6 @@ const routes = [
     path: '/',
     name: 'Home',
     component: Home,
-  },
-  {
-    path: '/change',
-    name: 'Change',
-    component: Change,
   },
   {
     path: '/sponser',
