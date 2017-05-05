@@ -238,7 +238,7 @@
               </mu-row>
               <mu-row gutter class="project">
                 <mu-col width="100" tablet="100" desktop="20">
-                  <div>STEP 2-1 </div>
+                  <div class="step">STEP 2-1 </div>
                 </mu-col>
                 <mu-col width="100" tablet="100" desktop="80">
                   <div>
@@ -248,7 +248,7 @@
               </mu-row>
               <mu-row gutter class="project">
                 <mu-col width="100" tablet="100" desktop="20">
-                  <div>STEP 2-2 </div>
+                  <div class="step">STEP 2-2 </div>
                 </mu-col>
                 <mu-col width="100" tablet="100" desktop="80">
                   <div>
@@ -277,7 +277,7 @@
               </mu-row>
               <mu-row gutter class="project">
                 <mu-col width="100" tablet="100" desktop="20">
-                  <div>STEP 2 </div>
+                  <div class="step">STEP 2 </div>
                 </mu-col>
                 <mu-col width="100" tablet="100" desktop="80">
                   <div>
@@ -287,7 +287,7 @@
               </mu-row>
               <mu-row gutter class="project">
                 <mu-col width="100" tablet="100" desktop="20">
-                  <div>STEP 3 </div>
+                  <div class="step">STEP 3 </div>
                 </mu-col>
                 <mu-col width="100" tablet="100" desktop="80">
                   <div>
@@ -297,7 +297,7 @@
               </mu-row>
               <mu-row gutter class="project">
                 <mu-col width="100" tablet="100" desktop="20">
-                  <div>STEP 4 </div>
+                  <div class="step">STEP 4 </div>
                 </mu-col>
                 <mu-col width="100" tablet="100" desktop="80">
                   <div>
@@ -368,8 +368,12 @@ export default {
 <style lang="sass" scoped>
   @import '../sass/settings'
   @import url('https://fonts.googleapis.com/css?family=Patrick+Hand')
+  @import url('https://fonts.googleapis.com/css?family=Londrina+Outline')
   .step
     font-family: 'Patrick Hand',Patrick Hand,cursive
+    font-family: 'Londrina Outline', cursive
+    font-size: 1.5em
+    font-weight: 900
   hr
     color: #fff
     background-color: #fff
