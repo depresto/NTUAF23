@@ -18,12 +18,13 @@
         <div class="project-list">
           <mu-row gutter>
             <mu-col width="100" tablet="50" desktop="100">
-              <div class="fb-video"
+<!--               <div class="fb-video"
               data-href="https://www.facebook.com/NTUartfest/videos/1357235894314831/"
               data-allowfullscreen="true"
               data-autoplay="false"
               data-show-captions="true">
-              </div>
+              </div> -->
+              <youtube :video-id="videoId" class="youtube"></youtube>
             </mu-col>
             <mu-col width="100" tablet="50" desktop="33">
             專案一覽表
@@ -245,6 +246,7 @@ export default {
         dance: 'static/images/artproject_xing/dance.png',
         fear: 'static/images/artproject_xing/fear.jpg',
         cyborg: 'static/images/artproject_xing/cyborg.png',
+        videoId: 'CWaSJNicnDM',
       };
     },
   },

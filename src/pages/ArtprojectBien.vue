@@ -89,9 +89,9 @@
             </mu-col>
             <mu-col width="100" tablet="50" desktop="50">
               <div>
-                <div class="title">政治正確</div>
+                <div class="title">政治正確的精神錯亂</div>
                 <div class="discription">
-                  <div>政治正確的精神錯亂編導式攝影展</div>
+                  <div>編導式攝影</div>
                   <br/>
                   <div>
                  民主政體及資本主義的制度下，⼈民作主的美意應是建構在⼈⼈皆有⽴場與中⼼思想的基礎上，然⽽「政治正確」掌握了話語權，因此成為有⼼⼈⼠操弄議題的⼯具。許多⼈為正確而正確，跟⾵盲從，卻對於該議題沒有深⼊探討琢磨，有時甚⾄⽀持者⾼喊的⼝號與其所作所為有所⽭盾，如同「精神錯亂」⼀般卻不⾃知。
@@ -157,15 +157,15 @@
                   </div>
                   <div class="place">
                   ｜互動式裝置藝術 ｜<br/>
-                  展期：05.08 - 05.26 平日｜12：00 - 20：00 <br/>
-                  地點：校史館夾層書庫<br/>
-                  ｜紀實文字作品｜<br/>
+                  展期： 05.08 - 05.26 平日｜12：00 - 20：00  <br/>
+                  地點：社科院外廊道<br/>
+<!--                   ｜紀實文字作品｜<br/>
                   展期：05.09 - 05.26｜00：00 - 23：59<br/>
-                  地點：社科院外走廊
+                  地點：社科院外走廊 -->
                   </div>
-                  <a class="more" href="https://medium.com/ntuartfest/acad-gender/home">
+<!--                   <a class="more" href="https://medium.com/ntuartfest/acad-gender/home">
                     more
-                  </a>
+                  </a> -->
                 </div>
               </div>
             </mu-col>
