@@ -23,7 +23,7 @@
             變策展｜身份變形
           </div>
           <div class="discription">
-            帶領大家理解藝術治療內涵當中非常重視的結構與解構。讓參與者跟著講師的腳步
+           被賦予的，謂之身分。每一種身份背後隱含的角色期待與互動關係，將我們編織進巨大的人際網絡當中，誰也逃不了。
           </div>
           <btn class="btn" route="/artproject_bien">變策展部</btn>
 <!--           <img class="department1_img" src="static/images/hero/hero_head.png"> -->
@@ -39,7 +39,7 @@
             形策展｜科技變形
           </div>
           <div class="discription">
-            帶領大家理解藝術治療內涵當中非常重視的結構與解構。讓參與者跟著講師的腳步
+            科技帶領世界漸漸地改變，將人們的深信不疑轉換為下一個迷思；驀然回首，世界早已不是當初的模樣。
           </div>
           <btn class="btn" route="/artproject_xing">形策展部</btn>
 <!--           <img class="department1_img" src="static/images/hero/hero_hand.png"> -->
@@ -55,7 +55,7 @@
             學術策展｜世代變形
           </div>
           <div class="discription">
-            帶領大家理解藝術治療內涵當中非常重視的結構與解構。讓參與者跟著講師的腳步
+            每個世代，都有著他們獨自的美麗與悲愁，而隨著時間不斷的推移，思想、正義跟隨世代一起變形。
           </div>
           <btn class="btn" route="/academic">學術策展部</btn>
 <!--           <img class="department1_img" src="static/images/hero/hero_foot.png"> -->
