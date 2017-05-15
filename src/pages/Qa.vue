@@ -71,10 +71,10 @@
             <div class="title">售票活動</div>
             <p>所有售票活動開放線上購票至演出當天中午</p>
             <mu-row gutter class="project">
-              <mu-col width="100" tablet="100" desktop="20">
+              <mu-col width="100" tablet="100" desktop="18">
                 <div>劇場</div>
               </mu-col>
-              <mu-col width="100" tablet="100" desktop="30">
+              <mu-col width="100" tablet="100" desktop="32">
                 <div>
                   懼形｜羅拔 Paradise City｜
                 </div>
@@ -332,6 +332,13 @@
           <div>A : 臺大藝術季 >> 活動 >> 找到了</div>
           </div>
         </div>
+        <div class="section bgc-r">
+          <div class="section_container">
+          <div class="title">有其他任何問題歡迎私訊 藝術季粉專 或寄信至信箱詢問</div>
+          <div>藝術季粉專：https://www.facebook.com/NTUartfest/</div>
+          <div>信箱：ntuaf23.marketing@gmail.com</div>
+          </div>
+        </div>
       </div>
       <foot></foot>
     </div>
@@ -436,9 +443,9 @@ export default {
     height: 140px
     color: #fff
   .bgc-b
-    background: #BAE4EE
+    background: #A5D0D9
   .bgc-y
-    background: #F0DFCB
+    background: #ECD7BE
   .bgc-r
     background: #F48786
   .section
