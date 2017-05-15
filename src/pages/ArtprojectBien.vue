@@ -1,6 +1,9 @@
 <template>
   <transition appear name="fade">
-  <div>
+  <div
+    class="bg"
+    :style="{ 'background-image': 'url(' + bg + ')' }"
+  >
     <navBar></navBar>
     <div
       class="hero"
@@ -88,11 +91,10 @@
               </div>
             </mu-col>
             <mu-col width="100" tablet="50" desktop="50">
-              <div>
+              <div class="introduce">
                 <div class="title">政治正確的精神錯亂</div>
                 <div class="discription">
-                  <div>編導式攝影</div>
-                  <br/>
+                  <div class="tag">編導式攝影</div>
                   <div>
                  民主政體及資本主義的制度下，⼈民作主的美意應是建構在⼈⼈皆有⽴場與中⼼思想的基礎上，然⽽「政治正確」掌握了話語權，因此成為有⼼⼈⼠操弄議題的⼯具。許多⼈為正確而正確，跟⾵盲從，卻對於該議題沒有深⼊探討琢磨，有時甚⾄⽀持者⾼喊的⼝號與其所作所為有所⽭盾，如同「精神錯亂」⼀般卻不⾃知。
                   </div>
@@ -120,7 +122,7 @@
               </div>
             </mu-col>
             <mu-col width="100" tablet="50" desktop="50">
-              <div>
+              <div class="introduce">
                 <div class="title"> 畫像｜畫相</div>
                 <div class="discription">
                   <div>
@@ -149,7 +151,7 @@
               </div>
             </mu-col>
             <mu-col width="100" tablet="50" desktop="50">
-              <div>
+              <div class="introduce">
                 <div class="title">邃</div>
                 <div class="discription">
                   <div>
@@ -181,7 +183,7 @@
               </div>
             </mu-col>
             <mu-col width="100" tablet="50" desktop="50">
-              <div>
+              <div class="introduce">
                 <div class="title">形意</div>
                 <div class="discription">
                   <div>
@@ -210,8 +212,8 @@
               </div>
             </mu-col>
             <mu-col width="100" tablet="50" desktop="50">
-              <div>
-                <div class="title">妖意</div>
+              <div class="introduce">
+                <div class="title">妖易</div>
                 <div class="discription">
                   <div>都市中有許多的妖魔鬼怪，長相與人並無差異，混在人群中與人類共同生活。</div>
                   <div>
@@ -240,7 +242,7 @@
               </div>
             </mu-col>
             <mu-col width="100" tablet="50" desktop="50">
-              <div>
+              <div class="introduce">
                 <div class="title">烏合</div>
                 <div class="discription">
                   <div>
@@ -272,7 +274,7 @@
               </div>
             </mu-col>
             <mu-col width="100" tablet="50" desktop="50">
-              <div>
+              <div class="introduce">
                 <div class="title">What If</div>
                 <div class="discription">
                   <div>身份及角色隨著時空不斷變形。</div>
@@ -340,6 +342,7 @@ export default {
         crow: 'static/images/artproject_bien/crow.png',
         whatif: 'static/images/artproject_bien/whatif.png',
         videoId: 'XWg8ZifVkcQ',
+        bg: 'static/images/artproject_bien/bg.png',
       };
     },
   },
@@ -366,17 +369,24 @@ export default {
 a
   // color: #000
   display: inline-block
+.bg
+  width: 100%
+  height: 100%
+  @extend ._bcg-cover
 .wrapper
   margin: 20px 0
+  margin-bottom: 60px
 .row
   margin: 0 2rem
+  margin-left: 0
 .hero
   height: 580px
   width: 100%
   @extend ._bcg-cover
 .section
-  max-width: 1280px
+  max-width: 1024px
   margin: 10px auto
+  // background: #fff
 .intro
   max-width: 600px
   margin: 30px auto
@@ -405,17 +415,32 @@ a
       line-height: 3em
       text-align: left
 .project
-  margin: 20px 0
-  padding-top: 4em
+  margin: 40px 0
+  background: #fff
+  box-shadow: 0 5px 20px -5px rgba(50,50,93,.12), 0 3px 4px -2px rgba(0,0,0,.08)
+  transition-duration: .15s
+  &:hover
+    box-shadow: 0 30px 75px -15px rgba(50,50,93,.3), 0 25px 40px -20px rgba(0,0,0,.1)
+    transition-duration: .15s
+  .introduce
+    padding-top: 32px
   .project-img
-    height: 400px
+    height: 420px
     width: 100%
     @extend ._bcg-cover
   .title
     font-size: 1.6em
     font-weight: 900
     text-align: left
-    padding-bottom: 10px
+    padding-bottom: 8px
+    color: #4A7583
+    letter-spacing: 2px
+  .tag
+    background: #4A7583
+    color: #fff
+    display: inline-block
+    padding: 0.1em 1.4em
+    margin-bottom: 12px
   .discription
     text-align: left
     font-size: 1em
@@ -436,11 +461,17 @@ a
 </style>
 <style lang="sass" scoped>
   @media only screen and (max-width: 768px)
+    .wrapper
+      margin: 0 2rem
+    .row
+      margin: 0
+    .introduce
+      padding: 20px
     .hero
       height: 280px
     .project
       .project-img
-        height: 200px
+        height: 300px
         margin-bottom: 10px
 </style>
 <style lang="sass">

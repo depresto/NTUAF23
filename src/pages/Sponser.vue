@@ -152,4 +152,5 @@ export default {
   .paperB
     padding: 20px 0
     margin: 10px 0
+    text-align: left
 </style>

@@ -6,6 +6,7 @@ import Academic from '@/pages/Academic';
 import ArtprojectBien from '@/pages/ArtprojectBien';
 import ArtprojectXing from '@/pages/ArtprojectXing';
 import Qa from '@/pages/Qa';
+import Manual from '@/pages/Manual';
 
 Vue.use(VueRouter);
 
@@ -39,6 +40,11 @@ const routes = [
     path: '/Q&A',
     name: 'Q&A',
     component: Qa,
+  },
+  {
+    path: '/manual',
+    name: 'manual',
+    component: Manual,
   },
 ];
 
