@@ -45,7 +45,6 @@ img {
   left:0%;
 }
 .workspace1{
-  width: 100%;
   max-width: 100%;
   position: absolute;
   top: 0;left: 0;right: 0;bottom: 0;

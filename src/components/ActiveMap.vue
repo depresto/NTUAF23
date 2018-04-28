@@ -88,12 +88,12 @@ export default {
   top: 20px
   left: 0
   right: 0
-  margin 0 auto
+  margin: 0 auto
 
 .section
   height: 720px
   width: 100%
-  background: #6A8B9C
+  background: #E9D0D6
   display: flex
   align-items: center
   justify-content: center

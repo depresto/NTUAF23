@@ -45,14 +45,7 @@ export default {
   left: 0
   right: 0
   top: 45%
-.loader
-  width: 100vw
-  height: 100vh
-  background: #E4EDEE
-  position: fixed
-  top: 0
-  right: 0
-  z-index: 100
+  
 </style>
 
 <style>
@@ -84,6 +77,16 @@ a {
 
 img {
   width: 100%;
+}
+
+.loader {
+  width: 100vw;
+  height: 100vh;
+  background: #FFFDFE!important;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
 }
 
 </style>

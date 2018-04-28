@@ -20,7 +20,7 @@ console.log('歡迎加入下一屆台大藝術季工程師得行列喔');
 .footer
   height:  300px
   width: 100%
-  background: #6A8B9C
+  background: #E9D0D6
   position: relative
 span
   position: absolute
