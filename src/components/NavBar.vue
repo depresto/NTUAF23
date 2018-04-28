@@ -18,7 +18,7 @@
         <router-link to="Q&A">常見問題</router-link>
         <router-link to="sponser">合作夥伴</router-link>
         <a href="https://medium.com/ntuartfest">medium文章</a>
-        <a href="https://ntuaf23.backme.tw/shops/515?checked=true&locale=zh-TW">活動購票</a>
+        <a href="/ticket">活動購票</a>
       </div>
 
       <div
@@ -41,7 +41,7 @@
         <router-link to="Q&A">常見問題</router-link>
         <router-link to="sponser">合作夥伴</router-link>
         <a href="https://medium.com/ntuartfest">medium文章</a>
-        <a href="https://ntuaf23.backme.tw/shops/515?checked=true&locale=zh-TW">活動購票</a>
+        <a href="/ticket">活動購票</a>
       </div>
     </div>
   </section>
