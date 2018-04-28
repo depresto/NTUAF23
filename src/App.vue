@@ -1,7 +1,6 @@
 <template>
     <div>
       <div :class="loader" class="loader">
-        <img class="animation" src="static/images/hero/hero_headgif.gif">
       </div>
       <section id="app">
         <router-view></router-view>
