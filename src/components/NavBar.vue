@@ -12,8 +12,8 @@
         class="list"
         v-if="ww > mobileWidth"
       >
-        <router-link to="artproject_bien">變策展部</router-link>
-        <router-link to="artproject_xing">形策展部</router-link>
+        <router-link to="artproject_bien">憶策展部</router-link>
+        <router-link to="artproject_xing">常策展部</router-link>
         <router-link to="academic">學術策展部</router-link>
         <router-link to="Q&A">常見問題</router-link>
         <router-link to="sponser">合作夥伴</router-link>
@@ -35,8 +35,8 @@
         class="menu"
         v-if="menuStateOpen && ww < mobileWidth"
       >
-        <router-link to="artproject_bien">變策展部</router-link>
-        <router-link to="artproject_xing">形策展部</router-link>
+        <router-link to="artproject_bien">憶策展部</router-link>
+        <router-link to="artproject_xing">常策展部</router-link>
         <router-link to="academic">學術策展部</router-link>
         <router-link to="Q&A">常見問題</router-link>
         <router-link to="sponser">合作夥伴</router-link>

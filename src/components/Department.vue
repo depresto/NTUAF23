@@ -2,12 +2,9 @@
   <section class="section">
     <div class="row">
       <div class="concept">
-        <h1 class="B6BBBE">變形</h1>
+        <h1 class="B6BBBE">憶常</h1>
         <p class="B6BBBE intro">
-          今年在反思的主題下,有三個不同方向的議題探討,分別由三個策展部門 — 「變策
-          展部」、「形策展部」、「學術策展部」進行策劃。策劃的方式亦將以理念為導向,而不
-          再用藝術形式的呈現作為策展的分類,因此在三部門的規劃中,都將涵括多元形式的藝術
-          作品,共同表現同一策展主軸。
+          在「憶常」的大主題下，分別由三個策展部門 — 「憶策展部」、「常策展部」和「學術策展部」進行籌劃。策展的方式亦將以理念為導向，而不用藝術形式的呈現作為策展的分類，以此讓藝術表現的形式不會受到拘束。
         </p>
       </div>
     </div>
@@ -16,49 +13,46 @@
       <mu-col width="100" tablet="33" desktop="33">
         <div
           class="department"
-          :style="{ 'background-image': 'url(' + backgroundImage1 + ')' }"
+          :style="{ 'background-color': backgroundColor }"
         >
 
           <div class="name">
-            變策展｜身份變形
+            憶策展部｜記憶
           </div>
           <div class="discription">
-           被賦予的，謂之身分。每一種身份背後隱含的角色期待與互動關係，將我們編織進巨大的人際網絡當中，誰也逃不了。
+           我們每個人都有一個看得見，摸得到的軀殼，然而真正證明我們存在的是沒有形體的記憶。記憶同時是極為個人的也是屬於群體的；它造就我們的情感、思想，卻又稍縱即逝;是身為人的真實紀錄，同時經常是捏造、嫁接、竄改出來的。透過對記憶多重性質的認識與重新詮釋和想像，我們希望去挖掘記憶與人之間，形塑，支配，保存等錯綜複雜又習以為常的關係。
           </div>
-          <btn class="btn" route="/artproject_bien">變策展部</btn>
-<!--           <img class="department1_img" src="static/images/hero/hero_head.png"> -->
+          <btn class="btn" route="/artproject_bien">憶策展部</btn>
         </div>
       </mu-col>
 
       <mu-col width="100" tablet="33" desktop="33">
         <div
           class="department"
-          :style="{ 'background-image': 'url(' + backgroundImage2 + ')' }"
+          :style="{ 'background-color': backgroundColor }"
         >
           <div class="name">
-            形策展｜科技變形
+            常策展部｜日常
           </div>
           <div class="discription">
-            科技帶領世界漸漸地改變，將人們的深信不疑轉換為下一個迷思；驀然回首，世界早已不是當初的模樣。
+            日常是一種自然，是毫無意識的累積、是日復一日的循環。我們總是週期性地失落、習慣性地微笑，在一成不變的日子裡練習生活，學會世界上不言而喻的規則，然後安然地，隱身其中。希望透過與場域與身分的對話，對質日常裡的秩序與荒謬，重新看待自身存在的環境與角色，也許適應，也許破解。日常本就是那些看似永恆不變，卻又難以掌握的。
           </div>
-          <btn class="btn" route="/artproject_xing">形策展部</btn>
-<!--           <img class="department1_img" src="static/images/hero/hero_hand.png"> -->
+          <btn class="btn" route="/artproject_xing">常策展部</btn>
         </div>
       </mu-col>
 
       <mu-col width="100" tablet="33" desktop="33">
         <div
           class="department"
-          :style="{ 'background-image': 'url(' + backgroundImage3 + ')' }"
+          :style="{ 'background-color': backgroundColor }"
         >
           <div class="name">
-            學術策展｜世代變形
+            學術策展部｜推廣藝術
           </div>
           <div class="discription">
-            每個世代，都有著他們獨自的美麗與悲愁，而隨著時間不斷的推移，思想、正義跟隨世代一起變形。
+            藝術不應該只是一種形式，而是一種生活態度。以每一個你我為起點，學術部探尋藝術與日常生活乃至於社會的各種關連，藉由攝影、電影與文字等多元形態，試圖重建一個內在與外在兼具的新美學觀。我們志在搭起藝術與群眾之間的橋樑，透過工作坊及講座啟發參與者對美的多元想像，進而在各式策展中提供共同創作環境，深化藝術在校園中的長遠影響力。
           </div>
           <btn class="btn" route="/academic">學術策展部</btn>
-<!--           <img class="department1_img" src="static/images/hero/hero_foot.png"> -->
         </div>
       </mu-col>
     </mu-row>
@@ -72,9 +66,7 @@ export default {
   extends: {
     data() {
       return {
-        backgroundImage1: 'static/images/home/department_1.png',
-        backgroundImage2: 'static/images/home/department_2.png',
-        backgroundImage3: 'static/images/home/department_3.png',
+        backgroundColor: '#e9d0d6',
       };
     },
     components: {
@@ -174,11 +166,11 @@ export default {
 
  .name {
   font-size: 2em;
-  color: #fff;
+  color: #322e2d;
  }
 
  .discription {
-  color: #fff;
+  color: #322e2d;
  }
 
  .btn {

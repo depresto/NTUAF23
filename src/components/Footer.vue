@@ -1,6 +1,6 @@
 <template>
   <section class="footer">
-    <span>第二十三屆台大藝術季</span>
+    <span>第二十四屆台大藝術季</span>
 
     <!-- Facebook like & share (simple button) -->
     <!-- <div class="fb-like" data-href="https://www.facebook.com/NTUartfest/" data-layout="standard" data-action="like" data-size="large" data-show-faces="true" data-share="true"></div> -->
