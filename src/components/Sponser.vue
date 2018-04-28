@@ -88,6 +88,11 @@ export default {
           // console.error(err);
           return;
         }
+
+        const len = item.length;
+
+        item.splice(len - 1, 1);
+        item.splice(len - 2, 1);
         this.sponsors = item;
         // console.log('||||| Retrieved: ', this.sponsors);
       });

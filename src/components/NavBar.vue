@@ -116,7 +116,8 @@ export default {
 
   .isScroll
     color: black
-    background: rgba(105,137,156,.8)
+    // background: rgba(105,137,156,.8)
+    background: rgba(233, 208, 214, .9)
     transition: .3s
 
   .logo

@@ -69,7 +69,8 @@ img {
   .workspace1
     display: none
   .workspace2
-    height: 100vh
+    // height: 100vh
+    width: 100%
   .h1
     font-size: 20px
   .title

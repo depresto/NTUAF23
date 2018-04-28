@@ -47,7 +47,7 @@ export default {
   },
 
   computed: {
-    events() {
+    getEvents() {
       return this.events;
     },
   },
