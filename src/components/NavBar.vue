@@ -104,6 +104,7 @@ export default {
     z-index: 100
     width: 100vw
     height: 4em
+    font-family: 'sans-serif'
 
   .navBar
     height: 4em

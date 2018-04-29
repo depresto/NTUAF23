@@ -11,8 +11,8 @@
         <MapMarker fill="#E61773"></MapMarker>
       </div>
 
-      <div @mouseover='filter = "臺大校門"' class="mark3">
-        <MapMarker></MapMarker>
+      <div @mouseover='filter = "台大舊體育館"' class="mark3">
+        <MapMarker fill="#595857"></MapMarker>
       </div>
 
       <div @mouseover='filter = "鹿鳴廣場"' class="mark4">
@@ -22,24 +22,9 @@
       <div @mouseover='filter = "博雅教學館"' class="mark5">
         <MapMarker fill="#6A3A07"></MapMarker>
       </div>
+      
       <div @mouseover='filter = "社科院"' class="mark6">
         <MapMarker  fill="#601986"></MapMarker>
-      </div>
-
-      <div @mouseover='filter = "霖澤館"' class="mark7">
-        <MapMarker fill="#595857"></MapMarker>
-      </div>
-
-      <div @mouseover='filter = "華南銀行臺大分行"' class="mark8">
-        <MapMarker fill="#F6C1D8"></MapMarker>
-      </div>
-
-      <div @mouseover='filter = "校史館"' class="mark9">
-        <MapMarker fill="#056FB8"></MapMarker>
-      </div>
-
-      <div @mouseover='filter = "醉月湖"' class="mark10">
-        <MapMarker fill="#181D62"></MapMarker>
       </div>
 
     </div>
@@ -119,7 +104,7 @@ export default {
 .information
   width: 300px
   position: absolute
-  top: 60%
+  top: 50%
   color: #fff
   right: 13%
   text-align: left
@@ -145,8 +130,8 @@ export default {
   left: 30%
 .mark3
   position: absolute
-  top: 40%
-  left: 20%
+  top: 22%
+  left: 31.5%
 .mark4
   position: absolute
   top: 55%
@@ -159,22 +144,6 @@ export default {
   position: absolute
   top: 17%
   left: 66%
-.mark7
-  position: absolute
-  top: 18%
-  left: 73%
-.mark8
-  position: absolute
-  top: 60%
-  left: 48%
-.mark9
-  position: absolute
-  top: 36%
-  left: 26%
-.mark10
-  position: absolute
-  top: 18%
-  left: 36%
 
 @media only screen and (max-width: 768px)
   .marker
@@ -218,7 +187,7 @@ export default {
     display: block
     margin: 0 auto
   .place
-    font-size: 1.2em
+    font-size: 1.0em
   .p
     font-size: 0.8em
     line-height: 1.2em
