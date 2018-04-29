@@ -4,10 +4,18 @@ const placeData = [
     place: '第一學生活動中心',
     color: '#F8B62D',
     actives: [
+      { active: '103 展示室' },
+      { active: '閉幕式｜時光迴廊' },
+      { active: '活大前紅磚道' },
+      { active: '閉幕式｜Our days 憶常，微市集' },
+      { active: '怡仁堂' },
+      { active: '閉幕式｜The End of the Start' },
       { active: '104 教室' },
       { active: '憶策展部｜交憶' },
       { active: '變策展部｜烏合' },
       { active: '延伸活動｜宜蘭洄龜少年藝術季 x 漫遊創作計劃' },
+      { active: '202 教室' },
+      { active: '學術展部｜再構空間 | 都市酵母團隊講座' },
       { active: 'B1 文藝展示室' },
       { active: '憶策展部｜觀 LOG IN' },
       { active: '學術展部｜・上線中 | 互動式展覽' },
@@ -39,10 +47,32 @@ const placeData = [
   },
   {
     place: '鹿鳴廣場',
-    color: '#C9BC9C',
+    color: '#E60013',
     actives: [
       { active: '常策展部 | 動木園．ANIMOOD' },
       { active: '3月至五月' },
+    ],
+  },
+  {
+    place: '振興草皮',
+    color: '#3E16FF',
+    actives: [
+      { active: '開幕式 | Back in Time' },
+      { active: '05.04 | 18:20 - 21:00' },
+      { active: '常策展部 | 動木園．ANIMOOD' },
+      { active: '3月至五月' },
+    ],
+  },
+  {
+    place: '舊體育館',
+    color: '#595857',
+    actives: [
+      { active: '2F' },
+      { active: '常策展部 | 日日 Shadows of Day' },
+      { active: '5.18 | 19:00、20:00' },
+      { active: '5.19 | 19:00、20:00' },
+      { active: '台灣戲曲學院｜我與社會的連結 | 把桿上的學習時光：客家戲工作坊' },
+      { active: '5.11 | 19:00-21:00' },
     ],
   },
   {
@@ -53,6 +83,16 @@ const placeData = [
       { active: '憶策展部｜歧憶 Forking Path' },
       { active: '05.12｜19:00 - 20:00' },
       { active: '05.13｜15:00 - 16:00、19:00 - 20:00' },
+    ],
+  },
+  {
+    place: '陳文成紀念廣場',
+    color: '#CC530D',
+    actives: [
+      { active: '學術展部｜再構空間' },
+      { active: '05.12｜午睡計畫｜10:00 - 15:00' },
+      { active: '05.14｜偏見地圖｜11:00 - 17:00' },
+      { active: '05.19｜再構廣場｜10:00 - 15:00' },
     ],
   },
   {

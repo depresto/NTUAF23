@@ -11,7 +11,7 @@
         <MapMarker fill="#E61773"></MapMarker>
       </div>
 
-      <div @mouseover='filter = "台大舊體育館"' class="mark3">
+      <div @mouseover='filter = "舊體育館"' class="mark3">
         <MapMarker fill="#595857"></MapMarker>
       </div>
 
@@ -25,6 +25,14 @@
       
       <div @mouseover='filter = "社科院"' class="mark6">
         <MapMarker  fill="#601986"></MapMarker>
+      </div>
+
+      <div @mouseover='filter = "陳文成紀念廣場"' class="mark7">
+        <MapMarker  fill="#CC530D"></MapMarker>
+      </div>
+
+      <div @mouseover='filter = "振興草皮"' class="mark8">
+        <MapMarker  fill="#3E16FF"></MapMarker>
       </div>
 
     </div>
@@ -122,8 +130,8 @@ export default {
     transform: scale(1.3)
 .mark1
   position: absolute
-  top: 36%
-  left: 52%
+  top: 34%
+  left: 57%
 .mark2
   position: absolute
   top: 60%
@@ -144,6 +152,14 @@ export default {
   position: absolute
   top: 17%
   left: 66%
+.mark7
+  position: absolute
+  top: 34%
+  left: 51%
+.mark8
+  position: absolute
+  top: 39%
+  left: 51%
 
 @media only screen and (max-width: 768px)
   .marker
