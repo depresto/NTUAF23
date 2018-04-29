@@ -9,7 +9,7 @@
             <div class="time_date">{{ s.Date }}</div>
             <div class="time_time">{{ s.Time }}</div>
           </div>
-          <div class="bg" v-bind:style="{ backgroundImage: 'url(' + s.Img[0].thumbnails.large.url + ')' }">
+          <div class="bg" v-bind:style="{ backgroundImage: 'url(' + s.imgUrl + ')' }">
             <div class="detail">{{ s.Detail }}</div>
           </div>
           <div class="name">{{ s.Name }}</div>
@@ -28,58 +28,40 @@
 </template>
 
 <script>
-import { map, set } from 'lodash';
-import Airtable from 'airtable';
-
-const base = new Airtable({ apiKey: 'keyC0ndMttA3rW78D' }).base('appQBrZJS5RUN4WPl');
-
 export default {
   data() {
     return {
-      events: [],
+      events: [{
+        Date: '5',
+        Time: '16-25',
+        Detail: '地點：公館靈感咖啡 | 一場10人 | 票價:180元',
+        Name: '反飾',
+        imgUrl: 'static/images/academic/fanshih.jpg',
+      },
+      {
+        Date: '5',
+        Time: '11-13',
+        Detail: '地點：活大地下室 | 一場20人 共三場 | 票價:200元',
+        Name: '觀 LOG IN',
+        imgUrl: 'static/images/artproject_chang/login.png',
+      },
+      {
+        Date: '5',
+        Time: '18-19',
+        Detail: '地點：舊體2F桌球室 | 一場10-15人 共四場 | 票價:免費入場，但需先在平台預約',
+        Name: '日日',
+        imgUrl: 'static/images/artproject_chang/sod.jpg',
+      },
+      {
+        Date: '5',
+        Time: '12-13',
+        Detail: '地點：台大博雅館一樓圓桌區 | 一場上限80人 共3場 | 票價:免費入場，但需先在平台預約',
+        Name: '歧憶',
+        imgUrl: 'static/images/artproject_yee/歧憶正方.jpg',
+      }],
       active: {},
       backgroundImage: 'static/images/home/active_g.png',
     };
-  },
-
-  created() {
-    this.syncAirtable();
-  },
-
-  computed: {
-    getEvents() {
-      return this.events;
-    },
-  },
-
-  methods: {
-    handleOnClick({ Name }) {
-      if (typeof this.active[Name] === 'undefined') {
-        this.active[Name] = true;
-      } else {
-        this.active[Name] = !this.active[Name];
-      }
-      // console.log(this.active);
-    },
-    syncAirtable() {
-      // console.log('||||| syncAirtable()...');
-      let item = [];
-      base('活動').select({
-        // maxRecords: 100,
-        view: 'Website view',
-      }).eachPage((records, fetchNextPage) => {
-        // console.log(records);
-        item = item.concat(map(records, record => set(record.fields, 'id', record.id)));
-        fetchNextPage();
-      }, (err) => {
-        if (err) {
-          // console.error(err);
-          return;
-        }
-        this.events = item;
-        // console.log('||||| Retrieved: ', this.events);
-      });
-    },
   },
 };
 </script>
