@@ -20,7 +20,7 @@
       class="more"
       :style="{ 'background-image': 'url(' + backgroundImage + ')' }"
     >
-      <a class="more_btn" href="https://ntuaf23.backme.tw/shops/515">查看所有活動</a>
+      <a class="more_btn" href="/ticket">查看所有活動</a>
     </div>
     </mu-row>
   </section>
@@ -69,7 +69,7 @@ export default {
 <style lang="sass" scoped>
   @import '../sass/settings'
   .wrapper
-    background: #E4EDEE
+    background: #FFFDFE
     padding: 40px 0
     margin: 40px 0
   .row
@@ -92,7 +92,7 @@ section{
 .time {
   width: 6em;
   height: 6em;
-  background: #4A7583;
+  background: #693F49;
   position: absolute;
   top: 1.5em;
   left:  1.5em;
@@ -141,7 +141,7 @@ section{
 }
 
 .name {
-  background: #4A7583;
+  background: #693F49;
   height: 4em;
   line-height: 4em;
   font-size: 1.2em;
@@ -157,7 +157,7 @@ section{
   background: #fff;
   width: 6.5em;
   text-align: center;
-  color: #4A7583;
+  color: #693F49;
   transition: 0.4s;
 }
 

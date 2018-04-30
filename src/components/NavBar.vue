@@ -144,9 +144,9 @@ export default {
     position: fixed
     top: 0
     padding-top: 50px
-    color: #69899C
+    color: #693F49
     a
-      color: #69899C
+      color: #693F49
       display: block
       text-align: center
       font-size: 1.2em
@@ -173,7 +173,7 @@ export default {
       top: 34px
   .toggle_menu_cross
     span
-      background: #69899C
+      background: #693F49
     .gnav--1
       transform: rotate(-45deg)
       top: 28px
