@@ -120,7 +120,7 @@
             <mu-col width="100" tablet="50" desktop="50">
               <div
               class="project-img"
-              :style="{ 'background-image': 'url(' + dance + ')' }"
+              :style="{ 'background-image': 'url(' + login + ')' }"
               >
               </div>
             </mu-col>
@@ -175,7 +175,7 @@
             <mu-col width="100" tablet="50" desktop="50">
               <div
               class="project-img"
-              :style="{ 'background-image': 'url(' + cyborg + ')' }"
+              :style="{ 'background-image': 'url(' + sod + ')' }"
               >
               </div>
             </mu-col>
@@ -235,6 +235,8 @@ export default {
         fear: 'static/images/artproject_xing/fear.jpg',
         cyborg: 'static/images/artproject_xing/cyborg.png',
         videoId: 'CWaSJNicnDM',
+        sod: 'static/images/artproject_chang/Image_d312415.jpg',
+        login: 'static/images/artproject_chang/Image_5492c75.jpg',
       };
     },
   },

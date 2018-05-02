@@ -165,7 +165,7 @@
             <mu-col width="100" tablet="50" desktop="50">
               <div
               class="project-img"
-              :style="{ 'background-image': 'url(' + queer + ')' }"
+              :style="{ 'background-image': 'url(' + fanshih + ')' }"
               >
               </div>
             </mu-col>
@@ -238,6 +238,7 @@ export default {
       return {
         scrollPos: 0,
         backgroundImage: 'static/images/academic/academic.png',
+        fanshih: 'static/images/academic/Image_7ea3cb6.jpg',
         queer: 'static/images/academic/queer.png',
         artfood: 'static/images/academic/art&food.png',
         retro: 'static/images/academic/retro.png',

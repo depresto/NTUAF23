@@ -72,7 +72,7 @@
             <mu-col width="100" tablet="50" desktop="50">
               <div
               class="project-img"
-              :style="{ 'background-image': 'url(' + political + ')' }"
+              :style="{ 'background-image': 'url(' + chi + ')' }"
               >
               </div>
             </mu-col>
@@ -262,6 +262,7 @@ export default {
         whatif: 'static/images/artproject_bien/whatif.png',
         videoId: 'XWg8ZifVkcQ',
         bg: 'static/images/artproject_bien/bg.png',
+        chi: 'static/images/artproject_yee/Image_76d5af1.jpg',
       };
     },
   },
