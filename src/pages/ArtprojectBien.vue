@@ -5,7 +5,7 @@
   >
     <navBar></navBar>
     <div
-    v-if="false"
+    v-if="true"
       class="hero"
       :style="{ 'background-image': 'url(' + backgroundImage + ')' }"
     >
@@ -247,7 +247,7 @@ export default {
     data() {
       return {
         scrollPos: 0,
-        backgroundImage: 'static/images/artproject_bien/artproject_bien.png',
+        backgroundImage: 'static/images/hero/header-web.jpg',
         queer: 'static/images/academic/queer.png',
         artfood: 'static/images/academic/art&food.png',
         retro: 'static/images/academic/retro.png',
@@ -292,6 +292,7 @@ a
 .bg
   width: 100%
   height: 100%
+  background-color: #FFFCFD !important
   @extend ._bcg-cover
 .wrapper
   margin: 20px 0

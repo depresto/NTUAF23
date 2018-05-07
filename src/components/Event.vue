@@ -4,7 +4,7 @@
     <h2> 熱門活動 </h2>
     <mu-row gutter class="card-row row">
       <mu-col width="100" tablet="50" desktop="50" class="card class-a" v-for="s in events" :key="s.id">
-        <a class="card" href="https://ntuaf23.backme.tw/shops/515">
+        <a class="card" href="/ticket">
           <div class="time">
             <div class="time_date">{{ s.Date }}</div>
             <div class="time_time">{{ s.Time }}</div>
@@ -13,7 +13,7 @@
             <div class="detail">{{ s.Detail }}</div>
           </div>
           <div class="name">{{ s.Name }}</div>
-          <a href="https://ntuaf23.backme.tw/shops/515" class="btn">前往報名</a>
+          <a :href="s.Url" class="btn">前往報名</a>
         </a>
       </mu-col>
     <div
@@ -37,6 +37,7 @@ export default {
         Detail: '地點：公館靈感咖啡 | 一場10人 | 票價:180元',
         Name: '反飾',
         imgUrl: 'static/images/academic/fanshih.jpg',
+        Url: 'http://artfest.ntu.edu.tw/ticket/#反飾%20║%20互動式劇場',
       },
       {
         Date: '5',
@@ -44,6 +45,7 @@ export default {
         Detail: '地點：活大地下室 | 一場20人 共三場 | 票價:200元',
         Name: '觀 LOG IN',
         imgUrl: 'static/images/artproject_chang/login.png',
+        Url: 'http://artfest.ntu.edu.tw/ticket/#觀%20log%20in║實境劇場',
       },
       {
         Date: '5',
@@ -51,6 +53,7 @@ export default {
         Detail: '地點：舊體2F桌球室 | 一場10-15人 共四場 | 票價:免費入場，但需先在平台預約',
         Name: '日日',
         imgUrl: 'static/images/artproject_chang/sod.jpg',
+        Url: 'http://artfest.ntu.edu.tw/ticket/#日日║現代舞蹈',
       },
       {
         Date: '5',
@@ -58,6 +61,7 @@ export default {
         Detail: '地點：台大博雅館一樓圓桌區 | 一場上限80人 共3場 | 票價:免費入場，但需先在平台預約',
         Name: '歧憶',
         imgUrl: 'static/images/artproject_yee/歧憶正方.jpg',
+        Url: 'http://artfest.ntu.edu.tw/ticket/#歧憶║現代舞蹈',
       }],
       active: {},
       backgroundImage: 'static/images/home/active_g.png',

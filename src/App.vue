@@ -10,7 +10,7 @@
 
 <script>
 // eslint-disable-next-line import/no-webpack-loader-syntax
-import Pace from 'imports-loader?define=>false!pace-progress';
+// import Pace from 'imports-loader?define=>false!pace-progress';
 
 export default {
   name: 'app',
@@ -21,14 +21,14 @@ export default {
   },
   created() {
     // const timestamp = new Date();
-    Pace.start({
-      ajax: false,
-    });
-    Pace.on('done', () => {
-      // console.log('done');
-      // console.log(new Date() - timestamp);
-      this.loader = 'hidden';
-    });
+    // Pace.start({
+    //   ajax: false,
+    // });
+    // Pace.on('done', () => {
+    //   // console.log('done');
+    //   // console.log(new Date() - timestamp);
+    //   this.loader = 'hidden';
+    // });
   },
 };
 </script>
@@ -80,6 +80,7 @@ img {
 }
 
 .loader {
+  display: none;
   width: 100vw;
   height: 100vh;
   background: #FFFDFE!important;

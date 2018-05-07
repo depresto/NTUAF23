@@ -104,7 +104,7 @@ export default {
 <style lang="sass" scoped>
   @import '../sass/settings'
   .wrapper
-    // background: #E4EDEE
+    background: #FFFDFE
     padding: 40px 0
     margin: 40px 0
 

@@ -2,7 +2,7 @@
   <transition appear name="fade">
   <div>
     <navBar></navBar>
-    <div v-if="false"
+    <div v-if="true"
       class="hero"
       :style="{ 'background-image': 'url(' + backgroundImage + ')' }"
     >
@@ -229,7 +229,7 @@ export default {
     data() {
       return {
         scrollPos: 0,
-        backgroundImage: 'static/images/artproject_xing/hero.png',
+        backgroundImage: 'static/images/hero/header-web.jpg',
         entrance: 'static/images/artproject_xing/entrance.png',
         dance: 'static/images/artproject_xing/dance.png',
         fear: 'static/images/artproject_xing/fear.jpg',
@@ -260,6 +260,8 @@ export default {
 <style lang="sass" scoped>
 
 @import '../sass/settings'
+#app > div 
+  background-color: #FFFCFD
 a
   // color: #000
   display: inline-block

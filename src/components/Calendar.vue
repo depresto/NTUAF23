@@ -7,10 +7,11 @@
           :style="{ 'background-image': 'url(' + bg + ')' }"
         >
         </div>
-        <a :href="link" class="btn">前往報名</a>
+        <a v-if="link" :href="link" class="btn">前往報名</a>
         <div><h2>{{event}}</h2></div>
         <div v-if="place">地點 {{place}}</div>
         <div v-if="time">時間  {{time}}</div>
+        <div v-if="intro">{{intro}}</div>
         <div @click="close" class="close">x</div>
       </div>
     </transition>
@@ -29,6 +30,42 @@ hhhh
 import fullCalendar from 'vue-fullcalendar';
 
 const demoEvents = [
+  {
+    title: '拾光隧道',
+    start: '2018-05-04',
+    cssClass: ['persian', 'bg'],
+    time: '14:00-21:00',
+    place: '圖資系館至活大前',
+    intro: '表演卡司：臺大嘻哈文化研究社 / Tomboyz (北醫熱舞社) / 臺大流行音樂歌唱社 / 儀隊旗隊 / 林正 / 郭真榕 Candle Kuo x 光暈者 The Glows / 好樂團 / 告五人',
+  },
+  {
+    title: 'Back in Time',
+    start: '2018-05-04',
+    cssClass: ['persian', 'bg'],
+    time: '18:20-21:00',
+    place: '振興草皮（遇雨改至怡仁堂）',
+  },
+  {
+    title: 'Our days 憶常，微市集',
+    start: '2018-05-25',
+    cssClass: ['persian', 'bg'],
+    time: '13:00-20:00',
+    place: '活大前紅磚道',
+  },
+  {
+    title: '時光迴廊',
+    start: '2018-05-25',
+    cssClass: ['persian', 'bg'],
+    time: '12:00-21:00 5/26-27 9:00~21:00',
+    place: '活大103展示室',
+  },
+  {
+    title: 'The End of the Start (晚會)',
+    start: '2018-05-25',
+    cssClass: ['persian', 'bg'],
+    time: '18:30-21:30',
+    place: '活大103展示室',
+  },
   {
     title: '反飾 | 互動式劇場',
     start: '2018-05-16',
@@ -253,6 +290,7 @@ export default {
       time: '',
       bg: '',
       link: '',
+      intro: '',
     };
   },
   extends: {
@@ -267,6 +305,7 @@ export default {
       this.time = event.time;
       this.bg = event.bg;
       this.link = event.link;
+      this.intro = event.intro;
     },
     dayClick() {
       this.event = '';

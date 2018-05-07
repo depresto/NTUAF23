@@ -27,13 +27,13 @@ const routes = [
     component: Academic,
   },
   {
-    path: '/artproject_bien',
-    name: 'artproject_bien',
+    path: '/artproject_yi',
+    name: 'artproject_yi',
     component: ArtprojectBien,
   },
   {
-    path: '/artproject_Xing',
-    name: 'artproject_Xing',
+    path: '/artproject_chang',
+    name: 'artproject_chang',
     component: ArtprojectXing,
   },
   {

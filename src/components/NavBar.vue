@@ -12,12 +12,12 @@
         class="list"
         v-if="ww > mobileWidth"
       >
-        <router-link to="artproject_bien">憶策展部</router-link>
-        <router-link to="artproject_xing">常策展部</router-link>
+        <router-link to="artproject_yi">憶策展部</router-link>
+        <router-link to="artproject_chang">常策展部</router-link>
         <router-link to="academic">學術策展部</router-link>
         <router-link to="Q&A">常見問題</router-link>
         <router-link to="sponser">合作夥伴</router-link>
-        <a href="https://medium.com/ntuartfest">medium文章</a>
+        <a href="http://www.storm.mg/lifestyle/431340">媒體報導</a>
         <a href="/ticket">活動購票</a>
       </div>
 
@@ -35,12 +35,12 @@
         class="menu"
         v-if="menuStateOpen && ww < mobileWidth"
       >
-        <router-link to="artproject_bien">憶策展部</router-link>
-        <router-link to="artproject_xing">常策展部</router-link>
+        <router-link to="artproject_yi">憶策展部</router-link>
+        <router-link to="artproject_chang">常策展部</router-link>
         <router-link to="academic">學術策展部</router-link>
         <router-link to="Q&A">常見問題</router-link>
         <router-link to="sponser">合作夥伴</router-link>
-        <a href="https://medium.com/ntuartfest">medium文章</a>
+        <a href="http://www.storm.mg/lifestyle/431340">媒體報導</a>
         <a href="/ticket">活動購票</a>
       </div>
     </div>

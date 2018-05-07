@@ -66,7 +66,7 @@ export default {
     return {
       sponsors: [],
       active: {},
-      backgroundImage: 'static/images/hero/hero.jpg',
+      backgroundImage: 'static/images/hero/header-web.jpg',
     };
   },
   created() {
@@ -109,6 +109,12 @@ export default {
           // console.error(err);
           return;
         }
+        // this.sponsors = item;
+
+        const len = item.length;
+
+        item.splice(len - 1, 1);
+        item.splice(len - 2, 1);
         this.sponsors = item;
         // console.log('||||| Retrieved: ', this.sponsors);
       });
@@ -119,6 +125,8 @@ export default {
 
 <style lang="sass" scoped>
   @import '../sass/settings'
+  #app > div 
+    background-color: #FFFCFD
   .wrapper
     // background: #E4EDEE
     padding: 40px 0

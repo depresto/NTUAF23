@@ -3,7 +3,7 @@
     <div class="manual">
       <div>
         <navBar></navBar>
-        <iframe style="width:100%; height:700px;" src="//e.issuu.com/embed.html#29486514/48462217" frameborder="0" allowfullscreen></iframe>
+        <iframe style="width:100%; height:700px;" src="https://drive.google.com/file/d/1-JNz1_pyi97z8tmT3fbKTRH2kHkEIfW1/preview" frameborder="0" allowfullscreen></iframe>
         <foot></foot>
       </div>
     </div>
@@ -24,7 +24,7 @@ export default {
 </script>
 <style lang="sass" scoped>
 .manual
-  background: #69899C
+  background: rgba(233, 208, 214, 1)
 iframe
   margin-top: 100px
   margin-bottom: 100px
