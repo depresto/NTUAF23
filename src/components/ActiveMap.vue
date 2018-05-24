@@ -114,8 +114,11 @@ export default {
   position: absolute
   top: 50%
   color: #fff
-  right: 13%
+  right: 12%
   text-align: left
+  background-color: #E9D0D6
+  padding: 10px 20px
+  z-index: 1000
 .place
   font-size: 1.5em
 </style>
