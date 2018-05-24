@@ -29,6 +29,7 @@
             <a :href="s.Link" target="blank" class="paperB" :zDepth="1" >
                 <img class="img_a" @click="handleOnClick(s)" :src="s.logo" :alt="s.filename">
             </a>
+            <mu-col width="100" v-if="s.text">{{s.text}}</mu-col>
           </mu-col>
         </mu-row>
       </div>
@@ -174,6 +175,8 @@ export default {
         id: 'ntusystem',
         logo: 'static/images/sponser/2.特別贊助/臺大系統.jpg',
         filename: '臺大系統.jpg',
+        show: true,
+        text: '財團法人臺大系統文化基金會',
       }];
     },
     class3() {

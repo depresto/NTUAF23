@@ -115,6 +115,15 @@ const placeData = [
     ],
   },
   {
+    place: '總圖',
+    color: '#616FED',
+    actives: [
+      { active: '日然廳' },
+      { active: '學術展部｜POST REASON' },
+      { active: '05.21 - 05.25' },
+    ],
+  },
+  {
     actives: '',
     place: '',
   },

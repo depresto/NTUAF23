@@ -35,6 +35,10 @@
         <MapMarker  fill="#3E16FF"></MapMarker>
       </div>
 
+      <div @mouseover='filter = "總圖"' class="mark9">
+        <MapMarker  fill="#616FED"></MapMarker>
+      </div>
+
     </div>
     <div class="information">
       <div
@@ -163,6 +167,12 @@ export default {
   position: absolute
   top: 39%
   left: 51%
+
+.mark9
+  position: absolute
+  top: 39%
+  left: 56%
+
 
 @media only screen and (max-width: 768px)
   .marker

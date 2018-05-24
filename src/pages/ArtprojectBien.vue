@@ -111,7 +111,7 @@
             <mu-col width="100" tablet="50" desktop="50">
               <div
               class="project-img"
-              :style="{ 'background-image': 'url(' + portrait + ')' }"
+              :style="{ 'background-image': 'url(' + huei + ')' }"
               >
               </div>
             </mu-col>
@@ -138,7 +138,7 @@
             <mu-col width="100" tablet="50" desktop="50">
               <div
               class="project-img"
-              :style="{ 'background-image': 'url(' + mysterious + ')' }"
+              :style="{ 'background-image': 'url(' + tse + ')' }"
               >
               </div>
             </mu-col>
@@ -166,7 +166,7 @@
             <mu-col width="100" tablet="50" desktop="50">
               <div
               class="project-img"
-              :style="{ 'background-image': 'url(' + shape + ')' }"
+              :style="{ 'background-image': 'url(' + chiao + ')' }"
               >
               </div>
             </mu-col>
@@ -197,7 +197,7 @@
             <mu-col width="100" tablet="50" desktop="50">
               <div
               class="project-img"
-              :style="{ 'background-image': 'url(' + demon + ')' }"
+              :style="{ 'background-image': 'url(' + chiyi + ')' }"
               >
               </div>
             </mu-col>
@@ -248,21 +248,12 @@ export default {
       return {
         scrollPos: 0,
         backgroundImage: 'static/images/hero/header-web.jpg',
-        queer: 'static/images/academic/queer.png',
-        artfood: 'static/images/academic/art&food.png',
-        retro: 'static/images/academic/retro.png',
-        gloomy: 'static/images/academic/gloomy.jpg',
-        see: 'static/images/academic/see.png',
-        mysterious: 'static/images/artproject_bien/mysterious.png',
-        political: 'static/images/artproject_bien/political.png',
-        portrait: 'static/images/artproject_bien/portrait.png',
-        shape: 'static/images/artproject_bien/shape.png',
-        demon: 'static/images/artproject_bien/demon.jpg',
-        crow: 'static/images/artproject_bien/crow.png',
-        whatif: 'static/images/artproject_bien/whatif.png',
-        videoId: 'XWg8ZifVkcQ',
         bg: 'static/images/artproject_bien/bg.png',
         chi: 'static/images/artproject_yee/Image_76d5af1.jpg',
+        huei: 'static/images/artproject_yee/匯憶.png',
+        tse: 'static/images/artproject_yee/憶測.png',
+        chiao: 'static/images/artproject_yee/交憶.jpg',
+        chiyi: 'static/images/artproject_yee/啟憶.png',
       };
     },
   },

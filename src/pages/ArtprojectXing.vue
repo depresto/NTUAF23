@@ -47,7 +47,7 @@
                   </a>
                 </li>
                 <li :class="{active:scrollPos == 3}">
-                  <a @click="$scrollTo(3)">
+                  <a href="https://iamltt13.wixsite.com/animood">
                  動木園．ANIMOOD
                   </a>
                 </li>
@@ -66,7 +66,7 @@
             <mu-col width="100" tablet="50" desktop="50">
               <div
               class="project-img"
-              :style="{ 'background-image': 'url(' + entrance + ')' }"
+              :style="{ 'background-image': 'url(' + chu + ')' }"
               >
               </div>
             </mu-col>
@@ -92,7 +92,7 @@
             <mu-col width="100" tablet="50" desktop="50">
               <div
               class="project-img"
-              :style="{ 'background-image': 'url(' + dance + ')' }"
+              :style="{ 'background-image': 'url(' + see + ')' }"
               >
               </div>
             </mu-col>
@@ -150,7 +150,7 @@
             <mu-col width="100" tablet="50" desktop="50">
               <div
               class="project-img"
-              :style="{ 'background-image': 'url(' + fear + ')' }"
+              :style="{ 'background-image': 'url(' + animood + ')' }"
               >
               </div>
             </mu-col>
@@ -230,13 +230,11 @@ export default {
       return {
         scrollPos: 0,
         backgroundImage: 'static/images/hero/header-web.jpg',
-        entrance: 'static/images/artproject_xing/entrance.png',
-        dance: 'static/images/artproject_xing/dance.png',
-        fear: 'static/images/artproject_xing/fear.jpg',
-        cyborg: 'static/images/artproject_xing/cyborg.png',
-        videoId: 'CWaSJNicnDM',
         sod: 'static/images/artproject_chang/Image_d312415.jpg',
         login: 'static/images/artproject_chang/Image_5492c75.jpg',
+        chu: 'static/images/artproject_chang/局外人.jpg',
+        see: 'static/images/artproject_chang/常視.png',
+        animood: 'static/images/artproject_chang/animood.jpg',
       };
     },
   },
