@@ -47,7 +47,7 @@
                   </a>
                 </li>
                 <li :class="{active:scrollPos == 3}">
-                  <a href="https://iamltt13.wixsite.com/animood">
+                  <a @click="$scrollTo(3)">
                  動木園．ANIMOOD
                   </a>
                 </li>
@@ -146,6 +146,7 @@
           </mu-row>
         </div>
         <div class="project">
+          <a href="https://iamltt13.wixsite.com/animood">
           <mu-row gutter>
             <mu-col width="100" tablet="50" desktop="50">
               <div
@@ -169,6 +170,7 @@
               </div>
             </mu-col>
           </mu-row>
+          </a>
         </div>
         <div class="project">
           <mu-row gutter>
