@@ -10,7 +10,7 @@
 
       <div class="mt40 h3"> 特別贊助 </div>
       <mu-row gutter class="card-row">
-        <mu-col width="100" tablet="50" desktop="50" class="card class-a" v-for="s in class2" :key="s.id">
+        <mu-col width="100" tablet="50" desktop="25" class="card class-a" v-for="s in class2" :key="s.id">
           <img class="img" @click="handleOnClick(s)" :src="s.logo" :alt="s.filename">
           <mu-col width="100" v-if="s.text">{{s.text}}</mu-col>
         </mu-col width="100" tablet="50" desktop="50">
@@ -110,6 +110,14 @@ export default {
         filename: '臺大系統.jpg',
         show: true,
         text: '財團法人臺大系統文化基金會',
+      }, {
+        id: 'hanru',
+        logo: 'static/images/sponser/2.特別贊助/漢儒文教.gif',
+        filename: '漢儒文教.gif',
+      }, {
+        id: 'huaru',
+        logo: 'static/images/sponser/2.特別贊助/華儒青年.jpg',
+        filename: '華儒青年.jpg',
       }];
     },
     class3() {

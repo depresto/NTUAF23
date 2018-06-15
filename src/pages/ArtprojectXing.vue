@@ -304,8 +304,19 @@ a
       line-height: 3em
       text-align: left
 .project
-  margin: 20px 0
+  margin: 20px auto
+  min-width: 980px
+  width: 80%
   padding-top: 4em
+  .row
+    background-color: #fff
+    box-shadow: 0 5px 20px -5px rgba(50, 50, 93, 0.12), 0 3px 4px -2px rgba(0, 0, 0, 0.08)
+    transition-duration: .15s
+    &:hover
+      box-shadow: 0 30px 75px -15px rgba(50, 50, 93, 0.3), 0 25px 40px -20px rgba(0, 0, 0, 0.1)
+      transition-duration: .15s
+    > div:nth-child(2)
+      padding: 40px 20px 20px 10px
   .project-img
     height: 400px
     width: 100%
@@ -338,7 +349,12 @@ a
     .hero
       height: 280px
     .project
+      min-width: auto
+      width: 90%
       .project-img
         height: 200px
         margin-bottom: 10px
+      .row
+        margin: 0
+
 </style>
